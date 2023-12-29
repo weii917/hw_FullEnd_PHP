@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+	padding: 0px;
+	margin: 0px !important;
+	box-sizing: border-box;
+	font-family: 'Noto Sans TC', sans-serif !important;
+	font-size: 16px !important;
+	background-color: #fff4ed !important;
+
+}
+
+#cover {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 5;
+	background: rgba(51, 51, 51, 0.4);
+	top: 0px;
+	left: 0px;
+	overflow: auto;
+}
+
+#coverr {
+	width: 70%;
+	min-width: 300px;
+	max-width: 800px;
+	height: 70%;
+	min-height: 300px;
+	position: absolute;
+	z-index: 5;
+	background: #ffffff;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	overflow: auto;
+}
+
+#main {
+	/* width: 1024px;
+	height: 768px; */
+	/* margin: 10px auto 10px auto;
+	border: #EE7728 1px solid;
+	position: relative; */
+}
+
+.title {
+	width: 100%;
+	height: 90vh;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.my-title-text {
+	width: 200px;
+	position: absolute;
+	/* 絕對定位 */
+	bottom: 50%;
+	/* 距離容器底部的距離 */
+	left: 50%;
+	/* 距離容器左側的距離 */
+	background-color: rgba(203, 176, 176, 0.5);
+	border: 1px solid rgba(203, 176, 176, 0.8);
+	/* 背景色透明度，可以根據需要調整 */
+	color: #ffffff;
+	/* 文字顏色 */
+	padding: 10px;
+	/* 內邊距，使得文字不會貼得太緊 */
+	font-size: 56px;
+	/* 文字大小，根據需要調整 */
+}
+
+.about-us-box {
+	height: 90vh;
+	margin-top: 20vh;
+}
+
+/* 關於我們 */
+.about-us {
+	width: 700px;
+	height: 500px;
+	background-color: rgba(203, 176, 176, 0.5);
+	color: rgb(0, 0, 0);
+	padding: 30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow:
+		1.8px 3.7px 2.5px rgba(0, 0, 0, 0.022),
+		4.4px 9.4px 6.3px rgba(0, 0, 0, 0.031),
+		9px 19.1px 12.9px rgba(0, 0, 0, 0.039),
+		18.6px 39.4px 26.6px rgba(0, 0, 0, 0.049),
+		51px 108px 73px rgba(0, 0, 0, 0.07);
+}
+
+.my-img {
+	width: 800px;
+	height: 500px;
+	border-radius: 20%;
+	position: relative;
+	font-size: 50px;
+
+}
+
+.my-cat-hand {
+	position: absolute;
+	transform: rotate(-45deg);
+	/* z-index: -1; */
+	top: -10%;
+	right: 0;
+	background-color: rgb(192, 158, 137);
+	border: 1px solid rgba(203, 176, 176, 0.8);
+	border-radius: 50%;
+	color: #000000f5;
+	/* 文字顏色 */
+	padding: 10px;
+	/* 內邊距，使得文字不會貼得太緊 */
+	font-size: 80px;
+	/* 文字大小，根據需要調整 */
+	box-shadow:
+		4.1px 5.8px 3.6px rgba(0, 0, 0, 0.033),
+		9.1px 12.8px 10px rgba(0, 0, 0, 0.071),
+		17.3px 24.2px 24.1px rgba(0, 0, 0, 0.118),
+		37px 52px 80px rgba(0, 0, 0, 0.19);
+}
+
+.my-cat-prev {
+	transform: rotate(-90deg);
+	font-size: 48px;
+	background-color: rgb(192, 158, 137);
+	border: 1px solid rgba(203, 176, 176, 0.8);
+	border-radius: 50%;
+	color: #000000f5;
+	/* 文字顏色 */
+	padding: 10px;
+	/* 內邊距，使得文字不會貼得太緊 */
+	box-shadow:
+		4.1px 5.8px 3.6px rgba(0, 0, 0, 0.033),
+		9.1px 12.8px 10px rgba(0, 0, 0, 0.071),
+		17.3px 24.2px 24.1px rgba(0, 0, 0, 0.118),
+		37px 52px 80px rgba(0, 0, 0, 0.19);
+}
+
+.my-cat-next {
+	transform: rotate(90deg);
+	font-size: 48px;
+	background-color: rgb(192, 158, 137);
+	border: 1px solid rgba(203, 176, 176, 0.8);
+	border-radius: 50%;
+	color: #000000f5;
+	/* 文字顏色 */
+	padding: 10px;
+	box-shadow:
+		4.1px 5.8px 3.6px rgba(0, 0, 0, 0.033),
+		9.1px 12.8px 10px rgba(0, 0, 0, 0.071),
+		17.3px 24.2px 24.1px rgba(0, 0, 0, 0.118),
+		37px 52px 80px rgba(0, 0, 0, 0.19);
+}
+
+.about-us-img {
+	border: 10px solid white;
+	box-shadow:
+		4.1px 5.8px 3.6px rgba(0, 0, 0, 0.033),
+		9.1px 12.8px 10px rgba(0, 0, 0, 0.071),
+		17.3px 24.2px 24.1px rgba(0, 0, 0, 0.118),
+		37px 52px 80px rgba(0, 0, 0, 0.19);
+}
+
+.my-line-height {
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.my-news {
+	width: 70%;
+	padding: 2px;
+	height: 80vh;
+	margin-top: 30vh;
+	margin-bottom: 10vh;
+	padding: 5px 10px 5px 10px;
+	background: rgba(255, 251, 236, 0.771);
+	/* border: #0C3 dashed 3px; */
+	position: relative;
+}
+
+.my-footer {
+	left: 0px;
+	position: relative;
+	background: rgb(68, 65, 54);
+	margin-top: 4px;
+	height: 400px;
+	display: block;
+}
+
+.switch-img {
+	height: 70vh;
+	width: 100%;
+	margin-top: 30vh;
+	margin-bottom: 20vh;
+	padding: 30px;
+
+}
+
+.room {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.room-1-text {
+	width: 200px;
+	position: absolute;
+	/* 絕對定位 */
+	bottom: 5%;
+	/* 距離容器底部的距離 */
+	left: 60%;
+	/* 距離容器左側的距離 */
+	background-color: rgba(255, 255, 255, 0.679);
+	/* border: 1px solid rgba(203, 176, 176, 0.8); */
+	/* 背景色透明度，可以根據需要調整 */
+	color: #2c0d0d;
+	/* 文字顏色 */
+	padding: 10px;
+	/* 內邊距，使得文字不會貼得太緊 */
+	font-size: 28px;
+	/* 文字大小，根據需要調整 */
+}
+
+.room-1 {
+	position: absolute;
+	bottom: 0px;
+	width: 33%;
+	left: 5%;
+
+}
+
+.room-2-text {
+	width: 200px;
+	position: absolute;
+	/* 絕對定位 */
+	bottom: 5%;
+	/* 距離容器底部的距離 */
+	left: 60%;
+	/* 距離容器左側的距離 */
+	background-color: rgba(164, 33, 33, 0.7);
+	/* border: 1px solid rgba(203, 176, 176, 0.8); */
+	/* 背景色透明度，可以根據需要調整 */
+	color: #2c0d0d;
+	/* 文字顏色 */
+	padding: 10px;
+	/* 內邊距，使得文字不會貼得太緊 */
+	font-size: 28px;
+	/* 文字大小，根據需要調整 */
+}
+
+.room-2 {
+	position: absolute;
+	left: 25%;
+	width: 33%;
+
+}
+
+.room-3 {
+	position: absolute;
+	bottom: 0px;
+	right: 8%;
+	width: 33%;
+
+}
+
+
+.t {
+	font-weight: 800;
+	display: block;
+	text-align: center;
+	padding: 10px 1px 10px 1px;
+}
+
+.botli {
+	border-bottom: #333 1px solid;
+}
+
+.mainmu {
+	position: relative;
+	border-radius: 10px;
+	background: url(../icon/menu.fw.png) center no-repeat;
+	background-size: cover;
+	line-height: 30px;
+	padding: 2px 10px 2px 10px;
+	margin: 7px 1px 7px 1px;
+	/* 加高度 */
+	height: 29px;
+
+
+}
+
+.mainmu:hover {
+	background: url(../icon/menu2.fw.png) center no-repeat;
+	background-size: cover;
+	/* hover時變更主選單層級優先權 */
+	z-index: 8;
+}
+
+.mainmu2 {
+	position: relative;
+	border-radius: 10px;
+	background: url(../icon/menu3.fw.png)center no-repeat;
+	background-size: 100% 100%;
+	line-height: 30px;
+	padding: 2px 10px 2px 10px;
+	margin: 7px 1px 7px 1px;
+	top: -10px;
+	/* 讓次選單在主選單上方 */
+	z-index: 9;
+}
+
+.mainmu2:hover {
+	background: url(../icon/menu4.fw.png) center no-repeat;
+	background-size: cover;
+}
+
+.mw {
+	position: relative;
+	left: 100px;
+	/* 次選單預設不顯示 */
+	display: none;
+	/* 調整次選單位置蓋住主選單 */
+	top: -20px;
+}
+
+#lf {
+	height: 540px;
+	width: 21%;
+	display: inline-block;
+}
+
+#menuput {
+	width: 100%;
+	height: 75%;
+	position: relative;
+	padding: 5px;
+	display: block;
+	margin: 3px;
+}
+
+/* .di {
+	display: inline-block;
+}
+
+.ad {
+	margin: 1px;
+	padding: 2px 10px 2px 10px;
+} */
+
+.cent {
+	text-align: center;
+}
+
+input,
+button {
+	border: #999 1px solid;
+	border-radius: 3px;
+	background: #EFEFEF;
+	padding: 5px;
+	margin: 3px;
+}
+
+input:active,
+button:active {
+	background: #E6E6E6;
+}
+
+input[type=text],
+input[type=password] {
+	width: 150px;
+}
+
+input:focus,
+button:focus {
+	box-shadow: #09C 0px 0px 3px .3px;
+}
+
+.yel td {
+	background: #F3DA49;
+	text-align: center;
+}
+
+.trce td {
+	text-align: center;
+}
+
+.bl {
+	color: #0CF;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.about-us-btn {
+	width: 30%;
+	background-color: rgb(202, 156, 95) !important;
+}
+
+.about-us-btn:hover {
+	background: var(--bs-dark) !important;
+	color: rgb(202, 156, 95) !important;
+}
