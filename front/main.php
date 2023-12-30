@@ -176,25 +176,34 @@
 	<!--  -->
 	<div class="mx-auto my-news">
 		<span class="t botli">住宿須知
-			<?php
-			if ($News->count(['sh' => 1]) > 5) {
-				echo "<a href='?do=news' style='float:right'>More...</a>";
-			}
+			<!-- <?php
+					if ($News->count(['sh' => 1]) > 10) {
+						echo "<a href='?do=news' style='float:right'>More...</a>";
+					}
 
-			?>
+					?> -->
 
 		</span>
 		<!--class='all'框框的訊息先隱藏，當hover會觸發function動作顯示出來  -->
 		<ul class="ssaa" style="list-style-type:decimal;">
 			<?php
-			$news = $News->all(['sh' => 1], ' limit 5');
+			$news = $News->all(['sh' => 1, 'news_id' => 0], ' limit 20');
 			foreach ($news as $n) {
 				echo "<li>";
-				echo mb_substr($n['text'], 0, 20);
+				echo mb_substr($n['text'], 0, 100);
 				echo "<div class='all' style='display:none'>";
 				echo $n['text'];
 				echo "</div>";
-				echo "...</li>";
+				echo "</li>";
+				$subnews = $News->all(['sh' => 1, 'news_id' => $n['id']], ' limit 20');
+				foreach ($subnews as $sn) {
+					echo "<ul>";
+					echo mb_substr($sn['text'], 0, 100);
+					echo "<div class='all' style='display:none'>";
+					echo $sn['text'];
+					echo "</div>";
+					echo "</ul>";
+				}
 			}
 
 			?>
@@ -202,7 +211,7 @@
 		<div id="altt" style="position: absolute; width: 350px; min-height: 100px; background-color: rgb(255, 255, 204); top: 50px; left: 130px; z-index: 99; display: none; padding: 5px; border: 3px double rgb(255, 153, 0); background-position: initial initial; background-repeat: initial initial;">
 
 		</div>
-		<script>
+		<!-- <script>
 			// show出來的層級div會較li大所以壓過li的訊息，
 			// 滑鼠在li上會顯示li底下子項目的class='all'裡的資料
 			$(".ssaa li").hover(
@@ -219,7 +228,7 @@
 					$("#altt").hide()
 				}
 			)
-		</script>
+		</script> -->
 	</div>
 
 </div>

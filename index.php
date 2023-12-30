@@ -106,7 +106,7 @@
 		?>
 		<!-- 結束中間主要顯示區塊 -->
 
-		<div class="row switch-img ">
+		<div class="row switch-img-box  ">
 
 			<div class="col-10 mx-auto align-items-center justify-content-center d-flex " style="width:89%; height:500px;">
 				<!-- <span class="t botli">校園映象區</span> -->
@@ -119,15 +119,13 @@
 				?>
 					<!-- 產生一個帶有顯示的id #ssaa隱藏的clss="im"，讓function能觸發執行該區域要顯示還是隱藏-->
 					<div id="ssaa<?= $idx; ?>" class="im cent">
-						<img src="./img/<?= $img['img']; ?>" style="width:450px;height:450px;border:3px solid orange;margin:3px">
+						<img src="./img/<?= $img['img']; ?>" style="width:450px;height:450px;border:3px solid black;margin:3px">
 					</div>
 
 				<?php
 				}
 				?>
-				<!-- $(".im").hide()會觸發css使display:none隱藏不顯示 -->
-				<!-- $("#ssaa" + t).show()會觸發css使display:block顯示 -->
-				<!-- 在PHP只要看起來像數字都會是數字來計算，即使設定字串也是以數字計算，除非用字串函示來固定字串 -->
+
 				<div class="cent" onclick="pp(2)"><i class="fa-solid fa-paw my-cat-next"></i></div><!-- 下張圖片的按鈕小圖 -->
 				<script>
 					// 如果是1>=0，nowapge-1=0，讓#ssaa0因前面id="ssaa=idx "設的數字從idx取從0開始，所以要產生的命名為了與id的命名數字相同，索引從0開始所以放索引0的圖片依序存放
