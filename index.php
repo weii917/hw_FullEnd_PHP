@@ -31,10 +31,16 @@
 							</span></a>
 					</li>
 					<li class="nav-item ">
-						<a class="nav-link text-white" href="#box2"><i class=" text-white fa-solid fa-film"></i>&nbsp;Card</a>
+						<a class="nav-link text-white" href="#item-1-us"><i class=" text-white fa-solid fa-film"></i>&nbsp;about us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link  text-white" href="#box3"><i class=" text-white fa-solid fa-comment"></i>&nbsp;news</a>
+						<a class="nav-link  text-white" href="#item-2-room"><i class=" text-white fa-solid fa-comment"></i>&nbsp;Room</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link  text-white" href="#item-3-news"><i class=" text-white fa-solid fa-comment"></i>&nbsp;News</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link  text-white" href="#item-4-img"><i class=" text-white fa-solid fa-comment"></i>&nbsp;Images</a>
 					</li>
 
 					<!-- <li class="nav-item" id="menuput" class="dbor">
@@ -105,7 +111,7 @@
 
 		?>
 		<!-- 結束中間主要顯示區塊 -->
-
+		<span id="item-4-img"></span>
 		<div class="row switch-img-box  ">
 
 			<div class="col-10 mx-auto align-items-center justify-content-center d-flex " style="width:89%; height:500px;">

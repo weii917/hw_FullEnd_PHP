@@ -13,10 +13,15 @@
   <title>Dashboard Template · Bootstrap v5.3</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
-  <!-- css js -->
+  <!--bootstrap css js -->
   <link rel="stylesheet" href="../plugin/css/bootstrap.css">
   <script src="../plugin/js/bootstrap.bundle.js"></script>
-  <!-- css js end -->
+  <!--bootstrap css js end -->
+  <!-- 乙級原有的 -->
+  <link href="./css/css.css" rel="stylesheet" type="text/css">
+  <script src="./js/jquery-1.9.1.min.js"></script>
+  <script src="./js/js.js"></script>
+  <!-- 乙級原有的end -->
 
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"> -->
   <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -98,16 +103,34 @@
     .bd-mode-toggle .dropdown-menu .active .bi {
       display: block !important;
     }
+
+    .nav-item>a {
+      color: aliceblue;
+    }
+
+    .my-nav-home {
+      font-size: 22px !important;
+    }
+
+    .nav-item>a:hover {
+      color: black;
+    }
   </style>
 
 
   <!-- Custom styles for this template -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="./admin/dashboard.css" rel="stylesheet">
+  <link href="./plugin/css/dashboard.css" rel="stylesheet">
 </head>
 
 <body>
+  <div id="cover" style="display:none; ">
+    <div id="coverr">
+      <a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;" onclick="cl('#cover')">X</a>
+      <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
+    </div>
+  </div>
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="check2" viewBox="0 0 16 16">
       <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
@@ -168,7 +191,7 @@
     </ul>
   </div>
 
-
+  <!-- 旁邊的icon -->
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="calendar3" viewBox="0 0 16 16">
       <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
@@ -219,9 +242,9 @@
     </symbol>
   </svg>
 
+  <!-- 旁邊的icon end -->
   <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="./index.php">貓旅館</a>
-
     <ul class="navbar-nav flex-row d-md-none">
       <li class="nav-item text-nowrap">
         <button class="nav-link px-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle search">
@@ -244,18 +267,18 @@
     </div>
   </header>
 
-  <div class="container-fluid" style="height: 90vh;">
-    <div class="row">
-      <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
-        <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+  <div class="container-fluid">
+    <div class=" row">
+      <div style="background-color: #B9887D!important; color:aliceblue!important;" class="sidebar border border-right col-md-3 col-lg-2 p-0">
+        <div class="offcanvas-md offcanvas-end " tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="sidebarMenuLabel">貓旅館</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
           </div>
-          <div style="height: 90vh;" class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
-            <ul class="nav flex-column">
+          <div style="height: 95vh;" class=" offcanvas-body d-md-flex flex-column p-0 pt-lg-3 ">
+            <ul class=" nav flex-column">
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="index.php">
+                <a class="my-nav-home nav-link d-flex align-items-center gap-2" aria-current="page" href="index.php">
                   <svg class="bi">
                     <use xlink:href="#house-fill" />
                   </svg>
@@ -271,35 +294,67 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=ad">
                   <svg class="bi">
-                    <use xlink:href="#cart" />
+                    <use xlink:href="#file-earmark" />
                   </svg>
-                  Products
+                  動態文字廣告管理
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi">
-                    <use xlink:href="#people" />
-                  </svg>
-                  Customers
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi">
-                    <use xlink:href="#graph-up" />
-                  </svg>
-                  Reports
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=mvim">
                   <svg class="bi">
                     <use xlink:href="#puzzle" />
                   </svg>
-                  Integrations
+                  動畫圖片管理
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=image">
+                  <svg class="bi">
+                    <use xlink:href="#graph-up" />
+                  </svg>
+                  輪播圖片管理
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=total">
+                  <svg class="bi">
+                    <use xlink:href="#puzzle" />
+                  </svg>
+                  進站總人數管理
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=bottom">
+                  <svg class="bi">
+                    <use xlink:href="#puzzle" />
+                  </svg>
+                  頁尾版權資料管理
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=news">
+                  <svg class="bi">
+                    <use xlink:href="#puzzle" />
+                  </svg>
+                  住宿須知資料管理
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=admin">
+                  <svg class="bi">
+                    <use xlink:href="#people" />
+                  </svg>
+                  管理者帳號管理
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=menu">
+                  <svg class="bi">
+                    <use xlink:href="#puzzle" />
+                  </svg>
+                  選單管理
                 </a>
               </li>
             </ul>
@@ -313,28 +368,69 @@
               </a>
             </h6>
             <ul class="nav flex-column mb-auto">
+
+              <!--  -->
+              <div id="menuput" class="dbor">
+                <!--主選單放此-->
+                <li class="nav-item">
+                  <a class="my-nav-home nav-link d-flex align-items-center gap-2" aria-current="page" href="index.php">
+                    <svg class="bi">
+                      <use xlink:href="#gear-wide-connected" />
+                    </svg>
+                    主選單區
+                  </a>
+                </li>
+                <!-- <span class="t botli">主選單區</span> -->
+                <!-- 撈出menu_id為零=>主選單並且sh=>顯示1 -->
+                <?php
+                $mainmu = $Menu->all(['sh' => 1, 'menu_id' => 0]);
+                foreach ($mainmu as $main) {
+                ?>
+                  <li class="nav-item">
+
+                    <a class="nav-link d-flex align-items-center gap-2" href="<?= $main['href']; ?>" style="color:#fff; font-size:13px; text-decoration:none;">
+                      <svg class="bi">
+                        <use xlink:href="#file-earmark-text" />
+                      </svg>
+                      <?= $main['text']; ?>
+
+                      <!-- <?php
+
+                            if ($Menu->count(['menu_id' => $main['id']]) > 0) {
+                              echo "<div class='mw'>";
+                              $subs = $Menu->all(['menu_id' => $main['id']]);
+                              foreach ($subs as $sub) {
+                                echo "<a href='{$sub['href']}'>";
+                                echo "<div class='mainmu2'>";
+                                echo $sub['text'];
+                                echo "</div>";
+                                echo "</a>";
+                              }
+                              echo "</div>";
+                            }
+                            ?> -->
+
+                    </a>
+                  </li>
+                <?php
+                }
+                ?>
+              </div>
+              <!--  -->
               <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#">
                   <svg class="bi">
                     <use xlink:href="#file-earmark-text" />
                   </svg>
-                  Current month
+                  進站總人數 :<?= $Total->find(1)['total']; ?>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <a class="nav-link d-flex align-items-center gap-2" href="./api/logout.php">
                   <svg class="bi">
-                    <use xlink:href="#file-earmark-text" />
+                    <use xlink:href="#door-closed" />
                   </svg>
-                  Last quarter
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi">
-                    <use xlink:href="#file-earmark-text" />
-                  </svg>
-                  Social engagement
+                  Sign out
                 </a>
               </li>
               <li class="nav-item">
@@ -358,21 +454,21 @@
                   Settings
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <!-- <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="./api/logout.php">
                   <svg class="bi">
                     <use xlink:href="#door-closed" />
                   </svg>
                   Sign out
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
       </div>
 
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <main style="width: 83%;" class=" col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="container" style="height: 80%;">
           <?php
 
           $do = $_GET['do'] ?? 'title';
@@ -385,11 +481,6 @@
           ?>
         </div>
 
-
-
-
-
-
     </div>
     </main>
   </div>
@@ -397,7 +488,7 @@
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script>
-  <script src="./admin/dashboard.js"></script>
+  <script src="./plugin/js/dashboard.js"></script>
 </body>
 
 </html>

@@ -189,7 +189,7 @@ body {
 	width: 70%;
 	padding: 2px;
 	height: 80vh;
-	margin-top: 30vh;
+	margin-top: 20vh;
 	margin-bottom: 10vh;
 	padding: 5px 10px 5px 10px;
 	background: rgba(255, 251, 236, 0.771);
@@ -285,8 +285,22 @@ body {
 
 }
 
+.my-box-shadow {
+	box-shadow:
+		0.7px 5.7px 5.3px rgba(0, 0, 0, 0.038),
+		2.5px 19.2px 17.9px rgba(0, 0, 0, 0.07),
+		11px 86px 80px rgba(0, 0, 0, 0.11);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background-color: white;
+	width: 99%;
+	height: 100%;
+	margin: auto;
+	overflow: auto;
+}
 
-.t {
+/* .t {
 	font-weight: 800;
 	display: block;
 	text-align: center;
@@ -306,7 +320,7 @@ body {
 	padding: 2px 10px 2px 10px;
 	margin: 7px 1px 7px 1px;
 	/* 加高度 */
-	height: 29px;
+height: 29px;
 
 
 }
@@ -345,7 +359,7 @@ body {
 	top: -20px;
 }
 
-#lf {
+*/ #lf {
 	height: 540px;
 	width: 21%;
 	display: inline-block;
@@ -413,4 +427,34 @@ a:hover {
 .about-us-btn:hover {
 	background: var(--bs-dark) !important;
 	color: rgb(202, 156, 95) !important;
+}
+
+.my-btn-ok {
+	background-color: rgb(202, 156, 95);
+	color: #fff4ed;
+}
+
+.my-btn-ok:hover {
+	background-color: rgb(232, 176, 109);
+	color: #fff4ed;
+}
+
+.my-btn-reset {
+	background-color: #89a067;
+	color: #fff4ed;
+}
+
+.my-btn-reset:hover {
+	background-color: #a4be7c;
+	color: #fff4ed;
+}
+
+.my-btn-update {
+	background-color: rgb(95, 157, 202);
+	color: #fff4ed;
+}
+
+.my-btn-update:hover {
+	background-color: rgb(106, 176, 226);
+	color: #fff4ed;
 }

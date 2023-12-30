@@ -1,7 +1,7 @@
 <div class="mt-5">
 	<!-- <?php include "marquee.php"; ?> -->
 	<!-- <div style="height:32px; display:block;"></div> -->
-	<div class="col-8 mx-auto about-us-box">
+	<div id="item-1-us" class="col-8 mx-auto about-us-box">
 		<div class="row mt-5 mb-5">
 			<div class="col-7 d-flex ">
 				<div class="about-us d-flex justify-content-center flex-column">
@@ -57,6 +57,7 @@
 	<!--輪播圖片js end  -->
 
 	<!--item start  -->
+	<div id="item-2-room"></div>
 	<div class="room row mt-5">
 		<!-- d-flex讓card一樣高 -->
 		<div class="room-1 col-sm-12 col-md-4 d-flex">
@@ -174,6 +175,7 @@
 	</div>
 	<!--item end  -->
 	<!--  -->
+	<span id="item-3-news"></span>
 	<div class="mx-auto my-news">
 		<span class="t botli">住宿須知
 			<!-- <?php
