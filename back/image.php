@@ -57,7 +57,7 @@
                 <tbody>
                     <tr>
                         <input type="hidden" name="table" value="<?= $do; ?>">
-                        <td width="42%"><input class="btn btn-dark" type="button" onclick="op('#cover','#cvr','./modal/<?= $do; ?>.php?table=<?= $do; ?>')" value="新增校園映像圖片"></td>
+                        <td width="42%"><input class="btn btn-dark" type="button" onclick="op('#cover','#cvr','./modal/<?= $do; ?>.php?table=<?= $do; ?>')" value="新增輪播圖片"></td>
                         <td class="">
                             <input class="btn my-btn-ok" type="submit" value="修改確定">
                             <input class="btn my-btn-reset" type="reset" value="重置">

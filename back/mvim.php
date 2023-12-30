@@ -1,5 +1,5 @@
 <div class="col" style="height: 80%;">
-    <div class="row mt-5 my-box-shadow" style="height: 80%;">
+    <div class="row mt-5 my-box-shadow">
         <p class="text-center fs-3 fw-bold">動畫圖片管理</p>
         <form method="post" action="./api/edit.php">
             <table width="100%" style="text-align: center;">
