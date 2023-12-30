@@ -1,4 +1,9 @@
-<?php include_once "./api/db.php"; ?>
+<?php include_once "./api/db.php";
+if (!isset($_SESSION['login'])) {
+  to("index.php");
+}
+?>
+
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
 

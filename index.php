@@ -84,7 +84,7 @@
 		<?php
 		$title = $Title->find(['sh' => 1]);
 		?>
-		<a class="row" title="<?= $title['text']; ?>" href="index.php">
+		<a class="row" title="<?= $title['text']; ?>" href="#">
 			<div class="title mx-auto " style="background:url(&#39;./img/<?= $title['img']; ?>&#39;); background-size:cover;"></div><!--標題-->
 			<!-- <div class="my-title-text-1">最細心的照料</div> -->
 			<div class="col-2 my-title-text">讓貓 <br> 有家的<br>感覺</div>

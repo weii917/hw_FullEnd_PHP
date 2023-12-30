@@ -164,6 +164,8 @@ if (isset($_GET['do'])) {
 
     if (isset(${ucfirst($_GET['do'])})) {
         $DB = ${ucfirst($_GET['do'])};
+    } else {
+        $DB = $Title;
     }
     /* if(in_array($key,$tables)){
         $DB=$$key;
