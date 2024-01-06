@@ -85,7 +85,8 @@ body {
 }
 
 .about-us-box {
-	height: 90vh;
+	/* height: 120vh; */
+	margin-bottom: 20vh;
 	margin-top: 20vh;
 }
 
@@ -198,8 +199,9 @@ body {
 	width: 70%;
 	padding: 2px;
 	height: 80vh;
-	margin-top: 20vh;
+	/* margin-top: 20vh; */
 	margin-bottom: 10vh;
+	margin-top: 20vh;
 	padding: 5px 10px 5px 10px;
 	background: rgba(255, 251, 236, 0.771);
 	/* border: #0C3 dashed 3px; */
@@ -215,8 +217,9 @@ body {
 	display: block;
 }
 
+
 .switch-img-box {
-	height: 70vh;
+	/* height: 70vh; */
 	width: 100%;
 	margin-top: 30vh;
 	margin-bottom: 20vh;
@@ -227,9 +230,11 @@ body {
 
 
 .room {
-	height: 100vh;
+
 	position: relative;
 	overflow: hidden;
+	margin-top: 20vh;
+	margin-top: 20vh;
 }
 
 
@@ -253,10 +258,10 @@ body {
 }
 
 .room-1 {
-	position: absolute;
+	/* position: absolute;
 	bottom: 0px;
 	width: 33%;
-	left: 5%;
+	left: 5%; */
 
 }
 
@@ -280,17 +285,17 @@ body {
 }
 
 .room-2 {
-	position: absolute;
-	left: 25%;
-	width: 33%;
+	/* position: absolute;
+	left: 25%; */
+	/* width: 33%; */
 
 }
 
 .room-3 {
-	position: absolute;
+	/* position: absolute;
 	bottom: 0px;
-	right: 8%;
-	width: 33%;
+	right: 8%; */
+	/* width: 33%; */
 
 }
 
@@ -331,10 +336,10 @@ body {
 	/* 加高度 */
 
 
-.mainmu:hover {
+/* .mainmu:hover {
 	background: url(../icon/menu2.fw.png) center no-repeat;
 	background-size: cover;
-	/* hover時變更主選單層級優先權 */
+	hover時變更主選單層級優先權
 	z-index: 8;
 }
 
@@ -347,7 +352,7 @@ body {
 	padding: 2px 10px 2px 10px;
 	margin: 7px 1px 7px 1px;
 	top: -10px;
-	/* 讓次選單在主選單上方 */
+	讓次選單在主選單上方
 	z-index: 9;
 }
 
@@ -359,13 +364,14 @@ body {
 .mw {
 	position: relative;
 	left: 100px;
-	/* 次選單預設不顯示 */
+	次選單預設不顯示
 	display: none;
-	/* 調整次選單位置蓋住主選單 */
+	調整次選單位置蓋住主選單
 	top: -20px;
 }
 
-*/ #lf {
+*/
+/* #lf {
 	height: 540px;
 	width: 21%;
 	display: inline-block;
@@ -378,44 +384,15 @@ body {
 	padding: 5px;
 	display: block;
 	margin: 3px;
-}
+}  */
 
 
 .cent {
 	text-align: center;
 }
 
-input,
-button {
-	border: #999 1px solid;
-	border-radius: 3px;
-	background: #EFEFEF;
-	padding: 5px;
-	margin: 3px;
-}
-
-input:active,
-button:active {
-	background: #E6E6E6;
-}
 
 
-
-input:focus,
-button:focus {
-	box-shadow: #09C 0px 0px 3px .3px;
-}
-
-
-/* .trce td {
-	text-align: center;
-}
-
-.bl {
-	color: #0CF;
-	cursor: pointer;
-	text-decoration: none;
-} */
 
 a {
 	text-decoration: none;
@@ -518,4 +495,14 @@ a:hover {
 .my-login-reset:hover {
 	background-color: black !important;
 	color: white !important;
+}
+
+/* 輪播圖片 */
+.carousel-item img {
+	width: 100%;
+	/* 設定圖片寬度為100% */
+	height: 80vh;
+	/* 您可以根據需要調整高度，這裡設定為400px作為示例 */
+	object-fit: cover;
+	/* 確保圖片能填滿整個容器，而不會變形 */
 }

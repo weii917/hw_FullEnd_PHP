@@ -1,9 +1,9 @@
 <div class="mt-5">
 	<!-- <?php include "marquee.php"; ?> -->
 	<!-- <div style="height:32px; display:block;"></div> -->
-	<div id="item-1-us" class="col-8 mx-auto about-us-box">
+	<div id="item-1-us" class="col-12 col-lg-8 mx-auto about-us-box">
 		<div class="row mt-5 mb-5">
-			<div class="col-7 d-flex ">
+			<div class="col-12 col-sm-7 d-flex mt-5  mx-auto">
 				<div class="about-us d-flex justify-content-center flex-column">
 					<h1 class="mb-5">關於我們</h1>
 					<p class="my-line-height">
@@ -14,7 +14,7 @@
 				</div>
 			</div>
 			<!--輪播圖片start-->
-			<div class="col-5 d-flex">
+			<div class="col-12 col-sm-5 d-flex mt-5 mx-auto">
 				<div class="my-img">
 					<i class="fa-solid fa-paw my-cat-hand"></i>
 					<div id="mwww" loop="true" style="width:100%; height:100%;">
@@ -58,125 +58,128 @@
 
 	<!--item start  -->
 	<div id="item-2-room"></div>
-	<div class="room row mt-5">
+	<div class=" room mx-auto col-10">
 		<!-- d-flex讓card一樣高 -->
-		<div class="room-1 col-sm-12 col-md-4 d-flex">
+		<div class="row">
+			<div class=" col-12 col-md-4 mt-5 mb-5">
 
-			<div class="">
-				<img src="./img/cat6.jpg" class="card-img-top" alt="...">
-				<div class="">
-					<h5 class="room-1-text text-start">經典房<br>
-						<button type="button" class="btn btn-outline-secondary mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModalLg-1">
-							more
-						</button>
-					</h5>
+				<div class="card">
+					<img src="./img/cat3.jpg" class="card-img-top" alt="...">
+					<div class="">
+						<h5 class="room-1-text text-start">經典房<br>
+							<button type="button" class="btn btn-outline-secondary mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModalLg-1">
+								more
+							</button>
+						</h5>
 
-					<!-- <div class="col d-md-flex justify-content-md-end"> -->
+						<!-- <div class="col d-md-flex justify-content-md-end"> -->
 
-					<!-- </div> -->
-					<!-- lg start -->
-					<div class="modal fade" id="exampleModalLg-1" tabindex="-1" aria-labelledby="exampleModalLabel-a" aria-hidden="true">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h1 class="modal-title fs-5" id="exampleModalLabel-a">Modal title</h1>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									modal-lg 800px
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-									<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- lg end -->
-
-				</div>
-			</div>
-		</div>
-		<div class="room-2 col-sm-12  col-md-4 d-flex">
-
-			<div class="">
-				<img src="./img/cat4.jpg" class="card-img-top" alt="...">
-				<div class="">
-					<h5 class="room-1-text text-start">溫馨房<br>
-						<button type="button" class="btn btn-outline-secondary mb-1" data-bs-toggle="modal" data-bs-target="#exampleModalLg-2">
-							more
-						</button>
-					</h5>
-
-					<!-- <div class="col d-md-flex justify-content-md-end"> -->
-
-					<!-- </div> -->
-					<!-- lg start -->
-					<div class="modal fade" id="exampleModalLg-2" tabindex="-1" aria-labelledby="exampleModalLabel-b" aria-hidden="true">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h1 class="modal-title fs-5" id="exampleModalLabel-b">Modal title</h1>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									modal-lg 800px
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-									<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+						<!-- </div> -->
+						<!-- lg start -->
+						<div class="modal fade" id="exampleModalLg-1" tabindex="-1" aria-labelledby="exampleModalLabel-a" aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="exampleModalLabel-a">Modal title</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										modal-lg 800px
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- lg end -->
+						<!-- lg end -->
 
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="room-3 col-sm-12 col-md-4 d-flex">
+			<div class="col-12 col-md-4 mt-5 mb-5">
 
-			<div class="">
-				<img src="./img/cat5.jpg" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="room-1-text text-start">星空房<br>
-						<button type="button" class="btn btn-outline-secondary mb-1" data-bs-toggle="modal" data-bs-target="#exampleModalLg-3">
-							more
-						</button>
-					</h5>
+				<div class="card">
+					<img src="./img/cat4.jpg" class="card-img-top" alt="...">
+					<div class="">
+						<h5 class="room-1-text text-start">溫馨房<br>
+							<button type="button" class="btn btn-outline-secondary mb-1" data-bs-toggle="modal" data-bs-target="#exampleModalLg-2">
+								more
+							</button>
+						</h5>
 
-					<!-- <div class="col d-md-flex justify-content-md-end"> -->
+						<!-- <div class="col d-md-flex justify-content-md-end"> -->
 
-					<!-- </div> -->
-					<!-- lg start -->
-					<div class="modal fade" id="exampleModalLg-3" tabindex="-1" aria-labelledby="exampleModalLabel-c" aria-hidden="true">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h1 class="modal-title fs-5" id="exampleModalLabel-c">Modal title</h1>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									modal-lg 800px
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-									<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+						<!-- </div> -->
+						<!-- lg start -->
+						<div class="modal fade" id="exampleModalLg-2" tabindex="-1" aria-labelledby="exampleModalLabel-b" aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="exampleModalLabel-b">Modal title</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										modal-lg 800px
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- lg end -->
+						<!-- lg end -->
 
+					</div>
 				</div>
 			</div>
-		</div>
+			<div class="col-12 col-md-4 mt-5 mb-5">
 
+				<div class="card">
+					<img src="./img/cat6.jpg" class="card-img-top" alt="...">
+					<div class="">
+						<h5 class="room-1-text text-start">星空房<br>
+							<button type="button" class="btn btn-outline-secondary mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModalLg-3">
+								more
+							</button>
+						</h5>
+
+						<!-- <div class="col d-md-flex justify-content-md-end"> -->
+
+						<!-- </div> -->
+						<!-- lg start -->
+						<div class="modal fade" id="exampleModalLg-3" tabindex="-1" aria-labelledby="exampleModalLabel-c" aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5" id="exampleModalLabel-c">Modal title</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										modal-lg 800px
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- lg end -->
+
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
 	<!--item end  -->
 	<!--  -->
 	<span id="item-3-news"></span>
-	<div class="mx-auto my-news">
+	<div class=" mx-auto my-news col-10">
+
 		<span class="t botli">住宿須知
 			<!-- <?php
 					if ($News->count(['sh' => 1]) > 10) {

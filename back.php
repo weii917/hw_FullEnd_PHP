@@ -277,7 +277,7 @@ if (!isset($_SESSION['login'])) {
   <div class="container-fluid">
     <div class=" row">
       <div style="background-color: #B9887D!important; color:aliceblue!important;" class="sidebar border border-right col-md-3 col-lg-2 p-0">
-        <div class="offcanvas-md offcanvas-end " tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div style="background-color: #B9887D !important;" class="offcanvas-md offcanvas-end " tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="sidebarMenuLabel">貓旅館</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
@@ -474,7 +474,7 @@ if (!isset($_SESSION['login'])) {
         </div>
       </div>
 
-      <main style="width: 83%;" class=" col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <main style="width: 70%;" class="mx-auto col-12 col-md-9  col-lg-10 ">
         <div class="container" style="height: 80%;">
           <?php
 
