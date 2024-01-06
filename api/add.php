@@ -5,19 +5,22 @@ include_once "db.php";
 $DB = ${ucfirst($_POST['table'])};
 // 把取得table存進變數
 $table = $_POST['table'];
-switch ($table) {
-    case "admin":
-        unset($_POST['pw2']);
-        break;
-}
+
 // 如果暫存檔有這檔案，將搬移當按到img裡面，存進post的img
 if (isset($_FILES['img']['tmp_name'])) {
     move_uploaded_file($_FILES['img']['tmp_name'], "../img/" . $_FILES['img']['name']);
     $_POST['img'] = $_FILES['img']['name'];
 }
-if($table != 'admin'){
+if ($table != 'admin') {
     $_POST['sh'] = ($table == 'title') ? 0 : 1;
-
+}
+switch ($table) {
+    case "admin":
+        unset($_POST['pw2']);
+        break;
+    case "book":
+        unset($_POST['sh']);
+        break;
 }
 // 把Post裡的table移除掉因為資料庫不需要這個資料
 unset($_POST['table']);

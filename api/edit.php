@@ -41,6 +41,19 @@ foreach ($_POST['id'] as $key => $id) {
                 $row['sh'] = (isset($_POST['sh']) && in_array($id, $_POST['sh'])) ? 1 : 0;
 
                 break;
+            case "book":
+                $row['email'] = $_POST['email'][$key];
+                $row['phone'] = $_POST['phone'][$key];
+                $row['name'] = $_POST['name'][$key];
+                $row['catname'] = $_POST['catname'][$key];
+                $row['datein'] = $_POST['datein'][$key];
+                $row['dateout'] = $_POST['dateout'][$key];
+                $row['room'] = $_POST['room'][$key];
+                $row['catnum'] = $_POST['catnum'][$key];
+                $row['know'] = $_POST['know'][$key];
+                $row['other'] = $_POST['other'][$key];
+
+                break;
             default:
                 $row['sh'] = (isset($_POST['sh']) && in_array($id, $_POST['sh'])) ? 1 : 0;
         }

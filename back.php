@@ -135,7 +135,7 @@ if (!isset($_SESSION['login'])) {
       <a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;" onclick="cl('#cover')" class="btn btn-light">X</a>
       <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
 
-      <a style="position:absolute; right:3px; bottom:4px; cursor:pointer; z-index:9999;" onclick="cl('#cover')"><button class="btn btn-warning">close</button></a>
+      <a style="position:absolute; right:3px; bottom:0px; cursor:pointer; z-index:9999;" onclick="cl('#cover')"><button class="btn btn-warning">close</button></a>
     </div>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -301,11 +301,11 @@ if (!isset($_SESSION['login'])) {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="?do=ad">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=book">
                   <svg class="bi">
                     <use xlink:href="#file-earmark" />
                   </svg>
-                  動態文字廣告管理
+                  訂房資料管理
                 </a>
               </li>
               <li class="nav-item">
