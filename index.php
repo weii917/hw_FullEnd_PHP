@@ -230,7 +230,11 @@
 		<!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?></span>
 		<span class="t col">進站總人數 :<?= $Total->find(1)['total']; ?> </span> -->
 	</div>
-
+	<?php
+	if (isset($_GET['book'])) {
+		echo "<script>alert('訂房成功');</script>";
+	}
+	?>
 	<link rel="stylesheet" href="./plugin/js/bootstrap.js">
 </body>
 

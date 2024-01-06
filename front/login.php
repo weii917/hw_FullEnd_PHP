@@ -126,6 +126,8 @@ if (isset($_GET['error'])) {
 						</div>
 
 						<!-- Submit button -->
+						<input type="hidden" name="table" value="admin"></input>
+
 						<input type="submit" value="提交" class="my-btn-login btn  btn-block mb-4"></input>
 						<input type="reset" value="清除" class="my-login-reset btn  btn-block mb-4"></p>
 

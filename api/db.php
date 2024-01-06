@@ -154,6 +154,7 @@ $Image = new DB('image');
 $News = new DB('news');
 $Admin = new DB('admin');
 $Menu = new DB('menu');
+$Book = new DB('book');
 
 //$tables=array_keys(get_defined_vars());
 /* dd($tables); */

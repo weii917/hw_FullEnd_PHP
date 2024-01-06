@@ -33,38 +33,38 @@
                         <div class="row ">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput" class="form-label">電子郵件</label>
-                                <input name="acc" style="border: none; border-bottom: 1px solid lightgray;" type="email" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                                <input name="email" style="border: none; border-bottom: 1px solid lightgray;" type="email" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
                             </div>
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">手機號碼</label>
-                                <input name="pw" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                                <input name="phone" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput3" class="form-label">飼主姓名</label>
-                                <input name="pw" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput3" placeholder="Another input placeholder">
+                                <input name="name" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput3" placeholder="Another input placeholder">
                             </div>
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput4" class="form-label">貓咪姓名</label>
-                                <input name="pw" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput4" placeholder="Another input placeholder">
+                                <input name="catname" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput4" placeholder="Another input placeholder">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput5" class="form-label">預計入住日期</label>
-                                <input name="pw" style="border: none; border-bottom: 1px solid lightgray;" type="date" class="form-control" id="formGroupExampleInput5" placeholder="Another input placeholder">
+                                <input name="datein" style="border: none; border-bottom: 1px solid lightgray;" type="date" class="form-control" id="formGroupExampleInput5" placeholder="Another input placeholder">
                             </div>
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput6" class="form-label">預計退房日期</label>
-                                <input name="pw" style="border: none; border-bottom: 1px solid lightgray;" type="date" class="form-control" id="formGroupExampleInput6" placeholder="Another input placeholder">
+                                <input name="dateout" style="border: none; border-bottom: 1px solid lightgray;" type="date" class="form-control" id="formGroupExampleInput6" placeholder="Another input placeholder">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput7" class="form-label">住宿房型</label>
-                                <select name="" id="formGroupExampleInput7" class="form-control" style="border: none; border-bottom: 1px solid lightgray;">
+                                <select name="room" id="formGroupExampleInput7" class="form-control" style="border: none; border-bottom: 1px solid lightgray;">
                                     <option value="經典房">經典房</option>
                                     <option value="溫馨房">溫馨房</option>
                                     <option value="星空房">星空房</option>
@@ -73,7 +73,7 @@
                             </div>
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput8" class="form-label">入住貓數</label>
-                                <select name="" id="formGroupExampleInput8" class="form-control" style="border: none; border-bottom: 1px solid lightgray;">
+                                <select name="catnum" id="formGroupExampleInput8" class="form-control" style="border: none; border-bottom: 1px solid lightgray;">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -87,7 +87,7 @@
                         <div class="row">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput9" class="form-label">如何得知我們</label>
-                                <select name="" id="formGroupExampleInput9" class="form-control" style="border: none; border-bottom: 1px solid lightgray;">
+                                <select name="know" id="formGroupExampleInput9" class="form-control" style="border: none; border-bottom: 1px solid lightgray;">
                                     <option value="是我們的老顧客">是我們的老顧客</option>
                                     <option value="Facebook">Facebook</option>
                                     <option value="Instagram">Instagram</option>
@@ -101,13 +101,14 @@
                         <div class="row">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput10" class="form-label">其他補充事項</label><br>
-                                <textarea name="" id="" cols="60" rows="5" class="form-control"></textarea>
+                                <textarea name="other" id="formGroupExampleInput10" cols="60" rows="5" class="form-control"></textarea>
 
                             </div>
                         </div>
 
 
                         <!-- Submit button -->
+                        <input type="hidden" name="table" value="book"></input>
                         <input type="submit" value="提交" class="my-btn-login btn  btn-block mb-4"></input>
                         <input type="reset" value="清除" class="my-login-reset btn  btn-block mb-4"></p>
 
