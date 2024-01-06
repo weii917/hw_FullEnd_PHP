@@ -80,11 +80,20 @@
 							<div class="modal-dialog modal-lg">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="exampleModalLabel-a">Modal title</h1>
+										<h1 class="modal-title fs-5" id="exampleModalLabel-a">經典房</h1>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
-										modal-lg 800px
+										寬 100cm * 深 145cm * 高 350cm <br>
+										基本舒適房型 <br><br>
+										最多入住 : 2貓<br>
+										適合幼小害羞貓咪<br>
+										提供：陶瓷貓碗、實木貓碗架、
+										開放型貓砂盆<br>
+										貓砂提供：礦砂、豆腐砂、松木砂<br>
+										房間和公共空間均有24小時的雲端監控系統<br>
+										二層貓跳台
+										供貓咪跳躍使用
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -117,11 +126,20 @@
 							<div class="modal-dialog modal-lg">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="exampleModalLabel-b">Modal title</h1>
+										<h1 class="modal-title fs-5" id="exampleModalLabel-b">溫馨房</h1>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
-										modal-lg 800px
+										寬 155cm * 深 150cm * 高 350cm <br>
+										溫馨舒適 <br><br>
+										最多入住 : 4貓<br>
+										適合成年活潑貓咪<br>
+										提供：陶瓷貓碗、實木貓碗架、
+										開放型貓砂盆<br>
+										貓砂提供：礦砂、豆腐砂、松木砂<br>
+										房間和公共空間均有24小時的雲端監控系統<br>
+										四層貓跳台
+										供貓咪跳躍使用
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -154,11 +172,22 @@
 							<div class="modal-dialog modal-lg">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="exampleModalLabel-c">Modal title</h1>
+										<h1 class="modal-title fs-5" id="exampleModalLabel-c">星空房</h1>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 									</div>
 									<div class="modal-body">
-										modal-lg 800px
+
+										寬 200cm * 深 150cm * 高 350cm <br>
+										獨立景觀窗 <br><br>
+										最多入住 : 6貓<br>
+										適合家中多數貓咪<br>
+										提供：陶瓷貓碗、實木貓碗架、
+										開放型貓砂盆<br>
+										貓砂提供：礦砂、豆腐砂、松木砂<br>
+										房間和公共空間均有24小時的雲端監控系統<br>
+										四層貓跳台
+										供貓咪跳躍使用
+										有觀景窗的大家庭房，最適合多貓又各自有個性的家庭！
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

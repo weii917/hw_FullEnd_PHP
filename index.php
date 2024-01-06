@@ -35,29 +35,30 @@
 							</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" href="#item-1-us"><i class=" text-white fa-solid fa-film"></i>&nbsp;about
-							us</a>
+						<a class="nav-link text-white" href="#item-1-us"><i class=" text-white fa-solid fa-film"></i>&nbsp;關於我們
+						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link  text-white" href="#item-2-room"><i class=" text-white fa-solid fa-comment"></i>&nbsp;Room</a>
+						<a class="nav-link  text-white" href="#item-2-room"><i class=" text-white fa-solid fa-comment"></i>&nbsp;房型介紹</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link  text-white" href="#item-3-news"><i class=" text-white fa-solid fa-comment"></i>&nbsp;News</a>
+						<a class="nav-link  text-white" href="#item-4-img"><i class=" text-white fa-solid fa-comment"></i>&nbsp;環境觀賞</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link  text-white" href="#item-4-img"><i class=" text-white fa-solid fa-comment"></i>&nbsp;Images</a>
+						<a class="nav-link  text-white" href="./front/book.php"><i class=" text-white fa-solid fa-comment"></i>&nbsp;線上預訂</a>
 					</li>
+
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Dropdown
+							貓咪住宿
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">聯絡我們</a></li>
+							<li><a class="dropdown-item" href="#item-3-news">住宿須知</a></li>
 							<li>
 								<hr class="dropdown-divider">
 							</li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
+							<li><a class="dropdown-item" href="#">Q&A</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -210,9 +211,24 @@
 	</div>
 	<div style="clear:both;"></div>
 	<!-- 頁尾顯示區塊 -->
+
 	<div class="row mt-5 my-footer">
-		<span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?></span>
-		<span class="t col">進站總人數 :<?= $Total->find(1)['total']; ?> </span>
+		<div class="container">
+			<footer class="py-3 my-4">
+				<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+				</ul>
+				<p class="text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>進站總人數 :<?= $Total->find(1)['total']; ?></p>
+				<!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?>進站總人數 :<?= $Total->find(1)['total']; ?></span> -->
+
+			</footer>
+		</div>
+		<!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?></span>
+		<span class="t col">進站總人數 :<?= $Total->find(1)['total']; ?> </span> -->
 	</div>
 
 	<link rel="stylesheet" href="./plugin/js/bootstrap.js">

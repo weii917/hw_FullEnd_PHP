@@ -215,6 +215,7 @@ body {
 	margin-top: 4px;
 	height: 400px;
 	display: block;
+	color: #ffffff !important;
 }
 
 
@@ -455,7 +456,8 @@ a:hover {
 	height: 100%;
 }
 
-.login-logo {
+.login-logo,
+.book-logo {
 	position: absolute;
 	height: 10vh;
 	width: 50vh;
@@ -505,4 +507,11 @@ a:hover {
 	/* 您可以根據需要調整高度，這裡設定為400px作為示例 */
 	object-fit: cover;
 	/* 確保圖片能填滿整個容器，而不會變形 */
+}
+
+/* 預定頁面 */
+.book-box {
+	position: relative;
+	height: 100%;
+	width: 50%;
 }
