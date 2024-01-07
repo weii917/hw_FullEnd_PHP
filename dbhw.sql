@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2023-12-30 18:06:38
+-- 產生時間： 2024-01-07 14:28:03
 -- 伺服器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -66,6 +66,36 @@ INSERT INTO `admin` (`id`, `acc`, `pw`) VALUES
 -- --------------------------------------------------------
 
 --
+-- 資料表結構 `book`
+--
+
+CREATE TABLE `book` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `email` text NOT NULL,
+  `phone` text NOT NULL,
+  `name` text NOT NULL,
+  `catname` text NOT NULL,
+  `datein` date NOT NULL,
+  `dateout` date NOT NULL,
+  `room` text NOT NULL,
+  `catnum` int(10) NOT NULL,
+  `know` text NOT NULL,
+  `other` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- 傾印資料表的資料 `book`
+--
+
+INSERT INTO `book` (`id`, `email`, `phone`, `name`, `catname`, `datein`, `dateout`, `room`, `catnum`, `know`, `other`) VALUES
+(8, '123@gmail.com', '123456789', 'sea', '558', '2024-01-05', '2024-01-07', '溫馨房', 3, 'Google搜尋', ''),
+(9, '888@gmail.com', '85789858', 'eresre', 'efes', '2024-01-08', '2024-01-09', '65', 2, '55', ''),
+(10, '123@gmail.com', '555555555', 'sea', 'efes', '2024-01-08', '2024-01-09', '星空房', 3, '朋友介紹', ''),
+(11, '123@gmail.com', '89797989', 'eresg', 'htrtth', '2024-01-06', '2024-01-07', '溫馨房', 2, 'hthrth', 'hrth');
+
+-- --------------------------------------------------------
+
+--
 -- 資料表結構 `bottom`
 --
 
@@ -79,7 +109,7 @@ CREATE TABLE `bottom` (
 --
 
 INSERT INTO `bottom` (`id`, `bottom`) VALUES
-(1, '頁尾版權2023');
+(1, '2024 Taishan Vocational Training  Company, Inc');
 
 -- --------------------------------------------------------
 
@@ -101,7 +131,10 @@ INSERT INTO `image` (`id`, `img`, `sh`) VALUES
 (12, 'cat4.jpg', 1),
 (13, 'cat.jpg', 1),
 (14, 'cat7.jpg', 1),
-(15, 'cat4.jpg', 1);
+(15, 'cat4.jpg', 1),
+(16, 'cat3.jpg', 1),
+(17, 'cat.jpg', 1),
+(18, 'cat2.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -122,7 +155,6 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`id`, `text`, `href`, `sh`, `menu_id`) VALUES
-(1, '管理登入', 'index.php?do=login', 1, 0),
 (2, '網站首頁', 'index.php', 1, 0),
 (4, '關於我們', 'index.php#item-1-us', 1, 0),
 (6, '111', '1111', 1, 1),
@@ -186,7 +218,7 @@ INSERT INTO `news` (`id`, `text`, `sh`, `news_id`) VALUES
 (18, '若在預訂前72小時內取消，將收取50%的住宿費用作為取消費用。', 1, 1),
 (19, '因快速轉換食物而易腸胃敏感者', 1, 3),
 (20, '攜帶貓咪熟悉味道之物品', 1, 3),
-(21, '旅館提供基本的貓砂和飼料，但建議顧客帶足夠的物資', 1, 3),
+(21, '旅館提供基本的貓砂和飼料，如果貓咪有習慣的貓砂或貓砂盆，也歡迎自備唷。', 1, 3),
 (22, '會根據貓的習慣和需求調整', 1, 4),
 (23, '提供每日30分鐘的活動和互動時間，如玩耍或陪伴', 1, 4),
 (24, '顧客需提供貓的主要獸醫聯絡方式和資訊。', 1, 5),
@@ -219,7 +251,8 @@ CREATE TABLE `titles` (
 
 INSERT INTO `titles` (`id`, `img`, `text`, `sh`) VALUES
 (11, 'cat.jpg', '1', 0),
-(12, 'cat2.jpg', '2', 1);
+(12, 'cat2.jpg', '2', 1),
+(13, 'school.jpg', 'fdaf d f', 0);
 
 -- --------------------------------------------------------
 
@@ -237,7 +270,7 @@ CREATE TABLE `total` (
 --
 
 INSERT INTO `total` (`id`, `total`) VALUES
-(1, 55585);
+(1, 55601);
 
 --
 -- 已傾印資料表的索引
@@ -253,6 +286,12 @@ ALTER TABLE `ad`
 -- 資料表索引 `admin`
 --
 ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- 資料表索引 `book`
+--
+ALTER TABLE `book`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -314,6 +353,12 @@ ALTER TABLE `admin`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- 使用資料表自動遞增(AUTO_INCREMENT) `book`
+--
+ALTER TABLE `book`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
 -- 使用資料表自動遞增(AUTO_INCREMENT) `bottom`
 --
 ALTER TABLE `bottom`
@@ -323,7 +368,7 @@ ALTER TABLE `bottom`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `image`
 --
 ALTER TABLE `image`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `menu`
@@ -347,7 +392,7 @@ ALTER TABLE `news`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `titles`
 --
 ALTER TABLE `titles`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `total`
