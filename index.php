@@ -24,7 +24,7 @@
 	<nav class="navbar navbar-expand-lg sticky-top " style="background-color: #B9887D; color:aliceblue;">
 		<div class="container-fluid">
 			<i class="fa-solid fa-paw"></i>
-			<a class="navbar-brand ms-2" href="#">貓旅館</a>
+			<a class="navbar-brand ms-2" href="#">貓旅</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -217,16 +217,35 @@
 
 	<div class="row mt-5 my-footer">
 		<div class="container">
-			<footer class="py-3 my-4">
-				<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+			<footer class="">
+				<ul class="nav justify-content-center border-bottom pb-3 mb-5 mt-5 p-5">
 					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
 					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
 					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
 					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
 					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
 				</ul>
-				<p class="text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>進站總人數 :<?= $Total->find(1)['total']; ?></p>
+
+				<div class=" col-3 mx-auto">
+					<p class=" text-white">地址:243新北市泰山區貴子里致遠新村55之1號<br>tel:0229018274</p>
+
+				</div>
+
+				<div class="mx-auto col-3 d-flex flex-column flex-sm-row w-10 gap-2">
+					<label for="newsletter1" class="visually-hidden">Email address</label>
+					<input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+					<button class="btn btn-outline-secondary" type="button">Subscribe</button>
+				</div>
+				<ul class="nav justify-content-center  pb-3 mt-4">
+					<li><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-line"></i></li>
+					<li><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></li>
+					<li><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></li>
+				</ul>
+				<p class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
+					進站總人數 :<?= $Total->find(1)['total']; ?>
+				</p>
 				<!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?>進站總人數 :<?= $Total->find(1)['total']; ?></span> -->
+
 
 			</footer>
 		</div>
@@ -235,7 +254,7 @@
 	</div>
 	<?php
 	if (isset($_GET['book'])) {
-		echo "<script>alert('訂房成功');</script>";
+		echo "<script>alert('預約成功，我們會於二十四小時之內與您聯繫');</script>";
 	}
 	?>
 	<link rel="stylesheet" href="./plugin/js/bootstrap.js">
