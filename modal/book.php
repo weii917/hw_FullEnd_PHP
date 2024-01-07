@@ -30,9 +30,19 @@
 
             <tr>
                 <td>房型</td>
-                <td><input class="form-control" type="text" name="room" id=""></td>
+                <td> <select name="room" id="" class="form-control">
+                        <option value="經典房">經典房</option>
+                        <option value="溫馨房">溫馨房</option>
+                        <option value="星空房">星空房</option>
+                    </select></td>
                 <td>&nbsp;&nbsp;&nbsp;&nbsp;貓數</td>
-                <td><input class="form-control" type="text" name="catnum" id=""></td>
+                <td> <select name="catnum" id="" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="4隻以上">4隻以上</option>
+                    </select></td>
             </tr>
 
             <tr>

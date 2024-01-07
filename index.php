@@ -24,7 +24,7 @@
 	<nav class="navbar navbar-expand-lg sticky-top " style="background-color: #B9887D; color:aliceblue;">
 		<div class="container-fluid">
 			<i class="fa-solid fa-paw"></i>
-			<a class="navbar-brand ms-2" href="#">cat live</a>
+			<a class="navbar-brand ms-2" href="#">貓旅館</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -42,14 +42,14 @@
 						<a class="nav-link  text-white" href="#item-2-room"><i class=" text-white fa-solid fa-comment"></i>&nbsp;房型介紹</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link  text-white" href="#item-4-img"><i class=" text-white fa-solid fa-comment"></i>&nbsp;環境觀賞</a>
+						<a class="nav-link  text-white" href="#item-4-img"><i class=" text-white fa-solid fa-comment"></i>&nbsp;環境介紹</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link  text-white" href="./front/book.php"><i class=" text-white fa-solid fa-comment"></i>&nbsp;線上預訂</a>
 					</li>
 
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" style="font-weight: bolder;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							貓咪住宿
 						</a>
 						<ul class="dropdown-menu">
@@ -71,12 +71,15 @@
             HI~Welcome
           </span> -->
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Logout</button>
+					<!-- <button class="btn btn-outline-light" type="submit">Logout</button> -->
 				</form>
+
+
 				<?php
 				if (isset($_SESSION['login'])) {
 				?>
-					<button class="my-btn btn btn-outline-light" onclick="lo('back.php')">返回管理</button>
+					<button class="btn btn-outline-light p-2 m-2" onclick="lo('./api/logout.php')" type="button">登出</button>
+					<button class="my-btn btn btn-outline-light p-2" onclick="lo('back.php')">返回管理</button>
 				<?php
 				} else {
 				?>

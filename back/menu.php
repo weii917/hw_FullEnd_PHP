@@ -34,9 +34,9 @@
                             <td>
                                 <input class="form-check-input" type="checkbox" name="del[]" value="<?= $row['id']; ?>">
                             </td>
-                            <td>
+                            <!-- <td>
                                 <input class="btn my-btn-update" type="button" value="編輯次選單" onclick="op('#cover','#cvr','./modal/submenu.php?table=<?= $do; ?>&id=<?= $row['id']; ?>')">
-                            </td>
+                            </td> -->
                         </tr>
                         <input type="hidden" name="id[]" value="<?= $row['id']; ?>">
                     <?php
