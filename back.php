@@ -367,13 +367,14 @@ if (!isset($_SESSION['login'])) {
             </ul>
 
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
-              <span>Saved reports</span>
-              <a class="link-secondary" href="#" aria-label="Add a new report">
+              <hr>
+              <!-- <a class="link-secondary" href="#" aria-label="Add a new report">
                 <svg class="bi">
                   <use xlink:href="#plus-circle" />
                 </svg>
-              </a>
+              </a> -->
             </h6>
+            <hr>
             <ul class="nav flex-column mb-auto">
 
               <!--  -->
