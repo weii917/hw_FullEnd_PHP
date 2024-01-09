@@ -9,7 +9,7 @@
                 <td><input class="form-control" type="file" name="img" id=""></td>
             </tr>
             <tr>
-                <td>標題區替代文字</td>
+                <td>標題區替代文字&nbsp;&nbsp;</td>
                 <td><input class="form-control" type="text" name="text" id=""></td>
             </tr>
         </table>

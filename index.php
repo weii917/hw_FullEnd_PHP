@@ -53,12 +53,12 @@
 							貓咪住宿
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">聯絡我們</a></li>
-							<li><a class="dropdown-item" href="#item-3-news">住宿須知</a></li>
+							<li><a class="dropdown-item" href="#item-3-contact">聯絡我們</a></li>
+							<li><a class="dropdown-item" href="#item-5-news">住宿須知</a></li>
 							<li>
 								<hr class="dropdown-divider">
 							</li>
-							<li><a class="dropdown-item" href="#">Q&A</a></li>
+							<!-- <li><a class="dropdown-item" href="#">Q&A</a></li> -->
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -136,8 +136,8 @@
 
 		?>
 		<!-- 結束中間主要顯示區塊 -->
-		<span id="item-4-img"></span>
-		<div class="row switch-img-box  ">
+		<div id="item-4-img"></div>
+		<div class="row">
 			<!-- 先前的輪播圖 -->
 			<!-- <div class="col-12 mx-auto align-items-center justify-content-center d-flex " style="width:89%; height:500px;">
 			
@@ -184,7 +184,7 @@
 				</script>
 			</div> -->
 
-			<div id="carouselExampleFade" class="carousel slide carousel-fade">
+			<div id="carouselExampleFade" class="carousel slide carousel-fade mx-auto">
 				<div class="carousel-inner">
 					<?php
 					// 撈出sh=1要顯示的圖片
@@ -193,7 +193,7 @@
 						$activeClass = ($idx === 0) ? 'active' : '';
 					?>
 						<div class="carousel-item <?= $activeClass; ?>">
-							<img src="./img/<?= $img['img']; ?>" class="d-block w-100" alt="...">
+							<img src="./img/<?= $img['img']; ?>" class="d-block w-100" alt="environment">
 						</div>
 
 					<?php
@@ -227,7 +227,7 @@
 				</ul>
 
 				<div class=" col-3 mx-auto">
-					<p class=" text-white">地址:243新北市泰山區貴子里致遠新村55之1號<br>tel:0229018274</p>
+					<p class=" text-white"><?= $Bottom->find(2)['bottom']; ?><br><?= $Bottom->find(3)['bottom']; ?></p>
 
 				</div>
 
@@ -244,7 +244,6 @@
 				<p class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
 					進站總人數 :<?= $Total->find(1)['total']; ?>
 				</p>
-				<!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?>進站總人數 :<?= $Total->find(1)['total']; ?></span> -->
 
 
 			</footer>

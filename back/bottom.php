@@ -4,10 +4,26 @@
         <form method="post" action="/api/edit_info.php">
             <table style="width:50%;margin:auto">
                 <tbody>
-                    <tr class="yel">
+                    <tr>
                         <td width="50%">頁尾版權資料</td>
                         <td width="50%">
                             <input class="form-control" type="text" name="bottom" value="<?= $Bottom->find(1)['bottom']; ?>">
+                            <input type="hidden" name="table" value="<?= $do; ?>">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%">地址</td>
+                        <td width="50%">
+                            <input class="form-control" type="text" name="bottom" value="<?= $Bottom->find(2)['bottom']; ?>">
+                            <input type="hidden" name="table" value="<?= $do; ?>">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%">電話</td>
+                        <td width="50%">
+                            <input class="form-control" type="text" name="bottom" value="<?= $Bottom->find(3)['bottom']; ?>">
                             <input type="hidden" name="table" value="<?= $do; ?>">
 
                         </td>

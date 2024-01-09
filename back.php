@@ -9,7 +9,7 @@ if (!isset($_SESSION['login'])) {
 
 <head>
   <!-- <script src="../assets/js/color-modes.js"></script> -->
-  <title>貓旅館</title>
+  <title>貓旅</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
@@ -251,7 +251,7 @@ if (!isset($_SESSION['login'])) {
 
   <!-- 旁邊的icon end -->
   <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="./index.php">貓旅館</a>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="./index.php">貓旅</a>
     <ul class="navbar-nav flex-row d-md-none">
       <li class="nav-item text-nowrap">
         <button class="nav-link px-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle search">
@@ -313,7 +313,7 @@ if (!isset($_SESSION['login'])) {
                   <svg class="bi">
                     <use xlink:href="#puzzle" />
                   </svg>
-                  動畫圖片管理
+                  關於我們圖片管理
                 </a>
               </li>
               <li class="nav-item">

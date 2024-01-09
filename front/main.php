@@ -206,10 +206,46 @@
 	</div>
 	<!--item end  -->
 	<!--  -->
-	<span id="item-3-news"></span>
-	<div class=" mx-auto my-news col-10">
+	<div id="item-3-contact"></div>
+	<div class="container my-iframe-box ">
+		<div class="row">
+			<div class="text-center mt-5 h3">聯絡我們</div>
+			<div class="d-flex justify-content-center align-items-center col-sm-6 my-iframe p-2">
+				<iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7036493264513!2d121.41951560000001!3d25.044129299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1704804706249!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class=" col-sm-6 d-flex flex-column justify-content-center">
+				地址：24302新北市泰山區貴子里致遠新村55之1號<br>
+				電話：02-2901-8274<br>
+				傳真：02-2908-4773<br>
 
-		<span class="t botli">住宿須知
+				<hr>
+				營業時間
+				12:00～21:00<br>
+
+				開放時間（參觀、入退房）
+				14:00～20:00<br>
+				<hr>
+				FB
+				https://www.facebook.com<br>
+
+				Line
+				@Line<br>
+
+				Email
+				cat@gmail.com<br>
+
+				IG
+				catIG<br>
+
+			</div>
+
+		</div>
+	</div>
+	<div id="item-5-news"></div>
+
+	<div class=" mx-auto my-news col-10">
+		<i class="fa-solid fa-paperclip my-news-icon"></i>
+		<div class="text-center mt-4 h3">住宿須知
 			<!-- <?php
 					if ($News->count(['sh' => 1]) > 10) {
 						echo "<a href='?do=news' style='float:right'>More...</a>";
@@ -217,9 +253,9 @@
 
 					?> -->
 
-		</span>
+		</div>
 		<!--class='all'框框的訊息先隱藏，當hover會觸發function動作顯示出來  -->
-		<ul class="ssaa" style="list-style-type:decimal;">
+		<ul class="p-5" style="list-style-type:decimal;">
 			<?php
 			$news = $News->all(['sh' => 1, 'news_id' => 0], ' limit 20');
 			foreach ($news as $n) {
@@ -229,6 +265,7 @@
 				echo $n['text'];
 				echo "</div>";
 				echo "</li>";
+				echo "<hr>";
 				$subnews = $News->all(['sh' => 1, 'news_id' => $n['id']], ' limit 20');
 				foreach ($subnews as $sn) {
 					echo "<ul>";
@@ -237,6 +274,7 @@
 					echo $sn['text'];
 					echo "</div>";
 					echo "</ul>";
+					echo "<hr>";
 				}
 			}
 
