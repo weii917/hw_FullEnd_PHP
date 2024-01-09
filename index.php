@@ -219,11 +219,11 @@
 		<div class="container">
 			<footer class="">
 				<ul class="nav justify-content-center border-bottom pb-3 mb-5 mt-5 p-5">
-					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
-					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
-					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-					<li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Home</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Features</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Pricing</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">FAQs</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">About</a></li>
 				</ul>
 
 				<div class=" col-3 mx-auto">
