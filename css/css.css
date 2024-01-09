@@ -224,6 +224,7 @@ border: 1px solid rgba(203, 176, 176, 0.8);  */
 
 .my-footer {
 	left: 0px;
+	bottom: 0px;
 	position: relative;
 	background: rgb(68, 65, 54);
 	margin-top: 4px;

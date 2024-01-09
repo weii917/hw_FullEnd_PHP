@@ -1,4 +1,5 @@
 <?php
+include_once "../api/db.php";
 if (isset($_SESSION['login'])) {
 	to("back.php");
 }
@@ -27,12 +28,15 @@ if (isset($_GET['error'])) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>login</title>
+	<title>登入</title>
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="../plugin/css/bootstrap.css">
 	<script src="../plugin/js/bootstrap.bundle.js"></script>
 	<!-- css -->
 	<link href="../css/css.css" rel="stylesheet" type="text/css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	<!-- <style>
 		body {
 			margin: 0;
@@ -90,38 +94,38 @@ if (isset($_GET['error'])) {
 
 		<div class="row d-flex">
 			<div class="col-6  login-box pb-5 justify-content-center d-flex flex-column align-items-start">
-				<h2 class="login-logo"><a href="../index.php">貓旅館</a></h2>
+				<h2 class="login-logo"><a href="../index.php">貓旅</a></h2>
 				<div class=" login p-5">
 
 					<form class="" method="post" action="../api/check.php">
 						<!-- Email input -->
-						<h3 class="mb-2">Login</h3>
+						<h3 class="mb-2">登入</h3>
 
 						<div class="mb-3">
 							<label for="formGroupExampleInput" class="form-label">Account</label>
-							<input name="acc" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+							<input name="acc" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput" placeholder="account">
 						</div>
 
 
 						<!-- Password input -->
 						<div class="mb-3">
 							<label for="formGroupExampleInput2" class="form-label">Password</label>
-							<input name="pw" style="border: none; border-bottom: 1px solid lightgray;" type=" password" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+							<input name="pw" style="border: none; border-bottom: 1px solid lightgray;" type=" password" class="form-control" id="formGroupExampleInput2" placeholder="password">
 						</div>
 
 						<!-- 2 column grid layout for inline styling -->
 						<div class="row mb-4">
 							<div class="col d-flex justify-content-center">
 								<!-- Checkbox -->
-								<div class="form-check">
+								<!-- <div class="form-check">
 									<input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
 									<label class="form-check-label" for="form2Example31"> Remember me </label>
-								</div>
+								</div> -->
 							</div>
 
 							<div class="col">
 								<!-- Simple link -->
-								<a href="#!">Forgot password?</a>
+								<!-- <a href="#!">Forgot password?</a> -->
 							</div>
 						</div>
 
@@ -139,6 +143,42 @@ if (isset($_GET['error'])) {
 				<img class="login-img" src="https://images.unsplash.com/photo-1683000789824-b7529dcb26a0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
 			</div>
 		</div>
+	</div>
+	<div class="row my-footer">
+		<div class="container">
+			<footer class="">
+				<ul class="nav justify-content-center border-bottom pb-3 mb-5 mt-5 p-5">
+					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Home</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Features</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Pricing</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">FAQs</a></li>
+					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">About</a></li>
+				</ul>
+
+				<div class=" col-4 mx-auto">
+					<p class=" text-white"><?= $Bottom->find(2)['bottom']; ?><br><?= $Bottom->find(3)['bottom']; ?></p>
+
+				</div>
+
+				<div class="mx-auto col-4 d-flex flex-column flex-sm-row w-10 gap-2">
+					<label for="newsletter1" class="visually-hidden">Email address</label>
+					<input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+					<button class="btn btn-outline-secondary" type="button">Subscribe</button>
+				</div>
+				<ul class="nav justify-content-center  pb-3 mt-4">
+					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-line"></i></a></li>
+					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
+					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
+				</ul>
+				<div class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
+					進站總人數 :<?= $Total->find(1)['total']; ?>
+				</div>
+
+
+			</footer>
+		</div>
+		<!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?></span>
+		<span class="t col">進站總人數 :<?= $Total->find(1)['total']; ?> </span> -->
 	</div>
 </body>
 

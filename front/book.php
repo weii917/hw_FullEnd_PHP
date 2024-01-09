@@ -12,6 +12,8 @@
     <script src="../plugin/js/bootstrap.bundle.js"></script>
     <!-- css -->
     <link href="../css/css.css" rel="stylesheet" type="text/css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -29,25 +31,25 @@
                     <h2 class="mt-2 book-logo"><a href="../index.php">貓旅館</a></h2>
                     <form class="" method="post" action="../api/check.php">
                         <!-- Email input -->
-                        <h3 class="text-center mt-5 pb-3">貓貓旅館線上預約</h3>
+                        <h3 class="text-center mt-5 pb-3">線上預約</h3>
                         <div class="row ">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput" class="form-label">電子郵件</label>
-                                <input name="email" style="border: none; border-bottom: 1px solid lightgray;" type="email" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                                <input name="email" style="border: none; border-bottom: 1px solid lightgray;" type="email" class="form-control" id="formGroupExampleInput" placeholder="XXX@email.com">
                             </div>
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">手機號碼</label>
-                                <input name="phone" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                                <input name="phone" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput2" placeholder="0900-000-000">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput3" class="form-label">飼主姓名</label>
-                                <input name="name" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput3" placeholder="Another input placeholder">
+                                <input name="name" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput3" placeholder="master">
                             </div>
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput4" class="form-label">貓咪姓名</label>
-                                <input name="catname" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput4" placeholder="Another input placeholder">
+                                <input name="catname" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput4" placeholder="cat">
                             </div>
                         </div>
 
@@ -123,16 +125,34 @@
     </div>
     <div class="row my-footer">
         <div class="container">
-            <footer class="py-3 my-4">
-                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+            <footer class="">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-5 mt-5 p-5">
+                    <li class="nav-item"><a href="#" class="nav-link px-4 text-white">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4 text-white">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4 text-white">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4 text-white">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4 text-white">About</a></li>
                 </ul>
-                <p class="text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>進站總人數 :<?= $Total->find(1)['total']; ?></p>
-                <!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?>進站總人數 :<?= $Total->find(1)['total']; ?></span> -->
+
+                <div class=" col-4 mx-auto">
+                    <p class=" text-white"><?= $Bottom->find(2)['bottom']; ?><br><?= $Bottom->find(3)['bottom']; ?></p>
+
+                </div>
+
+                <div class="mx-auto col-4 d-flex flex-column flex-sm-row w-10 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+                </div>
+                <ul class="nav justify-content-center  pb-3 mt-4">
+                    <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-line"></i></a></li>
+                    <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+                <div class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
+                    進站總人數 :<?= $Total->find(1)['total']; ?>
+                </div>
+
 
             </footer>
         </div>

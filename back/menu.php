@@ -7,7 +7,7 @@
                     <tr class="yel">
                         <td width="30%">主選單名稱</td>
                         <td width="30%">選單連結網址</td>
-                        <td width="10%">次選單數</td>
+                        <!-- <td width="10%">次選單數</td> -->
                         <td width="10%">顯示</td>
                         <td width="10%">刪除</td>
                         <td></td>
@@ -27,7 +27,7 @@
                                 <input class="form-control" type="text" name="href[]" value="<?= $row['href']; ?>">
                             </td>
                             <!-- count計算次選單的menu_id有幾個等於主選單的id，就知道此主選單有多少次選單 -->
-                            <td><?= $Menu->count(['menu_id' => $row['id']]); ?></td>
+                            <!-- <td><?= $Menu->count(['menu_id' => $row['id']]); ?></td> -->
                             <td>
                                 <input class="form-check-input" type="checkbox" name="sh[]" value="<?= $row['id']; ?>" <?= ($row['sh'] == 1) ? 'checked' : ''; ?>>
                             </td>

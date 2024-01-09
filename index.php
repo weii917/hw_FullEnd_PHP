@@ -45,7 +45,7 @@
 						<a class="nav-link  text-white" href="#item-4-img"><i class=" text-white fa-solid fa-comment"></i>&nbsp;環境介紹</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link  text-white" href="./front/book.php"><i class=" text-white fa-solid fa-comment"></i>&nbsp;線上預訂</a>
+						<a class="nav-link  text-white" href="./front/book.php"><i class=" text-white fa-solid fa-comment"></i>&nbsp;線上預約</a>
 					</li>
 
 					<li class="nav-item dropdown">
@@ -226,24 +226,24 @@
 					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">About</a></li>
 				</ul>
 
-				<div class=" col-3 mx-auto">
+				<div class=" col-4 mx-auto">
 					<p class=" text-white"><?= $Bottom->find(2)['bottom']; ?><br><?= $Bottom->find(3)['bottom']; ?></p>
 
 				</div>
 
-				<div class="mx-auto col-3 d-flex flex-column flex-sm-row w-10 gap-2">
+				<div class="mx-auto col-4 d-flex flex-column flex-sm-row w-10 gap-2">
 					<label for="newsletter1" class="visually-hidden">Email address</label>
 					<input id="newsletter1" type="text" class="form-control" placeholder="Email address">
 					<button class="btn btn-outline-secondary" type="button">Subscribe</button>
 				</div>
 				<ul class="nav justify-content-center  pb-3 mt-4">
-					<li><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-line"></i></li>
-					<li><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></li>
-					<li><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></li>
+					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-line"></i></a></li>
+					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
+					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
 				</ul>
-				<p class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
+				<div class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
 					進站總人數 :<?= $Total->find(1)['total']; ?>
-				</p>
+				</div>
 
 
 			</footer>
