@@ -12,8 +12,14 @@ switch ($table) {
         }
         break;
     case "book":
-        $Book->save($_POST);
+        if (!empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['name'])&& !empty($_POST['catname'])&& !empty($_POST['datein']) && !empty($_POST['dateout'])){
 
-        to("../index.php?book=1");
+            $Book->save($_POST);
+            to("../index.php?book=1");
+        }else{
+            to("../front/book.php?error=請填寫完整");
+        }
+
+      
         break;
 }

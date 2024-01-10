@@ -19,8 +19,8 @@ if (!isset($_SESSION['login'])) {
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
   <!--bootstrap css js -->
-  <link rel="stylesheet" href="../plugin/css/bootstrap.css">
-  <script src="../plugin/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="./plugin/css/bootstrap.css">
+  <script src="./plugin/js/bootstrap.bundle.js"></script>
   <!--bootstrap css js end -->
   <!-- 乙級原有的 -->
   <link href="./css/css.css" rel="stylesheet" type="text/css">
@@ -492,7 +492,40 @@ if (!isset($_SESSION['login'])) {
     </div>
     </main>
   </div>
-  </div>
+
+  <div class="row mt-5 my-footer">
+		<div class="container">
+			<footer class="">
+				<ul class="nav justify-content-center border-bottom pb-3 mb-5 mt-5 p-5">
+					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Home</a></li>
+					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Features</a></li>
+					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Pricing</a></li>
+					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">FAQs</a></li>
+					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">About</a></li>
+				</ul>
+
+				<div class=" col-4 mx-auto">
+					<p class=" text-white"><?= $Bottom->find(2)['bottom']; ?><br><?= $Bottom->find(3)['bottom']; ?></p>
+
+				</div>
+
+				<div class="mx-auto col-4 d-flex flex-column flex-sm-row w-10 gap-2">
+					<label for="newsletter1" class="visually-hidden">Email address</label>
+					<input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+					<button class="btn btn-outline-secondary" type="button">Subscribe</button>
+				</div>
+				<ul class="nav justify-content-center  pb-3 mt-4">
+					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-line"></i></a></li>
+					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
+					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
+				</ul>
+				<div class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
+					進站總人數 :<?= $Total->find(1)['total']; ?>
+				</div>
+
+
+			</footer>
+		</div>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script>

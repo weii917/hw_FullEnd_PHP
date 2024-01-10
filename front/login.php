@@ -110,7 +110,7 @@ if (isset($_GET['error'])) {
 						<!-- Password input -->
 						<div class="mb-3">
 							<label for="formGroupExampleInput2" class="form-label">Password</label>
-							<input name="pw" style="border: none; border-bottom: 1px solid lightgray;" type=" password" class="form-control" id="formGroupExampleInput2" placeholder="password">
+							<input name="pw" style="border: none; border-bottom: 1px solid lightgray;" type="password" class="form-control" id="formGroupExampleInput2" placeholder="password">
 						</div>
 
 						<!-- 2 column grid layout for inline styling -->
@@ -148,11 +148,11 @@ if (isset($_GET['error'])) {
 		<div class="container">
 			<footer class="">
 				<ul class="nav justify-content-center border-bottom pb-3 mb-5 mt-5 p-5">
-					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Home</a></li>
-					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Features</a></li>
-					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Pricing</a></li>
-					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">FAQs</a></li>
-					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">About</a></li>
+					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Home</a></li>
+					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Features</a></li>
+					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Pricing</a></li>
+					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">FAQs</a></li>
+					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">About</a></li>
 				</ul>
 
 				<div class=" col-4 mx-auto">
