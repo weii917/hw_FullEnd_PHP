@@ -2,8 +2,8 @@
 	<!-- <?php include "marquee.php"; ?> -->
 	<!-- <div style="height:32px; display:block;"></div> -->
 	<div id="item-1-us" class="col-12 col-lg-8 mx-auto about-us-box">
-		<div class="row mt-5 mb-5">
-			<div class="col-12 col-sm-7 d-flex mt-5  mx-auto">
+		<div id="about-us-left" class="row mt-5 mb-5">
+			<div class="col-12 col-sm-7 d-flex mt-5 mx-auto">
 				<div class="about-us d-flex justify-content-center flex-column">
 					<h1 class="mb-5">關於我們</h1>
 					<p class="my-line-height">
@@ -42,7 +42,7 @@
 		ww();
 		// 如果大於1有2張圖片執行每三秒輪播圖片，
 		if (lin.length > 1) {
-			setInterval("ww()", 5000);
+			setInterval("ww()", 3000);
 			now = 1;
 		}
 
@@ -60,13 +60,18 @@
 	<div id="item-2-room"></div>
 	<div class=" room mx-auto col-10">
 		<!-- d-flex讓card一樣高 -->
+		<div class="row justify-content-end ">
+
+			<h1 class="col-2 text-end border-bottom">房型</h1>
+		</div>
 		<div class="row">
+
 			<div class=" col-12 col-md-4 mt-5 mb-5">
 
 				<div class="card">
-					<img src="./img/cat3.jpg" class="card-img-top" alt="...">
+					<img src="./img/cat3.jpg" class="img-top" alt="...">
 					<div class="">
-						<h5 class="room-1-text text-start">經典房<br>
+						<h5 data-bs-toggle="modal" data-bs-target="#exampleModalLg-1" class="room-1-text text-start">經典房<br>
 							<button type="button" class="btn btn-outline-secondary mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModalLg-1">
 								more
 							</button>
@@ -110,9 +115,9 @@
 			<div class="col-12 col-md-4 mt-5 mb-5">
 
 				<div class="card">
-					<img src="./img/cat4.jpg" class="card-img-top" alt="...">
+					<img src="./img/cat4.jpg" class="img-top" alt="...">
 					<div class="">
-						<h5 class="room-1-text text-start">溫馨房<br>
+						<h5 data-bs-toggle="modal" data-bs-target="#exampleModalLg-2" class="room-1-text text-start">溫馨房<br>
 							<button type="button" class="btn btn-outline-secondary mb-1" data-bs-toggle="modal" data-bs-target="#exampleModalLg-2">
 								more
 							</button>
@@ -156,9 +161,9 @@
 			<div class="col-12 col-md-4 mt-5 mb-5">
 
 				<div class="card">
-					<img src="./img/cat6.jpg" class="card-img-top" alt="...">
+					<img src="./img/cat6.jpg" class="img-top" alt="...">
 					<div class="">
-						<h5 class="room-1-text text-start">星空房<br>
+						<h5 data-bs-toggle="modal" data-bs-target="#exampleModalLg-3" class="room-1-text text-start">星空房<br>
 							<button type="button" class="btn btn-outline-secondary mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModalLg-3">
 								more
 							</button>

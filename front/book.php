@@ -1,7 +1,7 @@
-<?php include_once "../api/db.php"; 
+<?php include_once "../api/db.php";
 
 if (isset($_GET['error'])) {
-	echo "<script>alert('{$_GET['error']}')</script>";
+    echo "<script>alert('{$_GET['error']}')</script>";
 }
 ?>
 
@@ -40,32 +40,32 @@ if (isset($_GET['error'])) {
                         <div class="row ">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput" class="form-label">電子郵件</label>
-                                <input name="email" style="border: none; border-bottom: 1px solid lightgray;" type="email" class="form-control" id="formGroupExampleInput" placeholder="XXX@email.com">
+                                <input required name="email" style="border: none; border-bottom: 1px solid lightgray;" type="email" class="form-control" id="formGroupExampleInput" placeholder="XXX@email.com">
                             </div>
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">手機號碼</label>
-                                <input name="phone" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput2" placeholder="0900-000-000">
+                                <input required name="phone" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput2" placeholder="0900-000-000">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput3" class="form-label">飼主姓名</label>
-                                <input name="name" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput3" placeholder="master">
+                                <input required name="name" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput3" placeholder="master">
                             </div>
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput4" class="form-label">貓咪姓名</label>
-                                <input name="catname" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput4" placeholder="cat">
+                                <input required name="catname" style="border: none; border-bottom: 1px solid lightgray;" type="text" class="form-control" id="formGroupExampleInput4" placeholder="cat">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput5" class="form-label">預計入住日期</label>
-                                <input name="datein" style="border: none; border-bottom: 1px solid lightgray;" type="date" class="form-control" id="formGroupExampleInput5" placeholder="Another input placeholder">
+                                <input required name="datein" style="border: none; border-bottom: 1px solid lightgray;" type="date" class="form-control" id="formGroupExampleInput5" placeholder="Another input placeholder">
                             </div>
                             <div class="col mb-3">
                                 <label for="formGroupExampleInput6" class="form-label">預計退房日期</label>
-                                <input name="dateout" style="border: none; border-bottom: 1px solid lightgray;" type="date" class="form-control" id="formGroupExampleInput6" placeholder="Another input placeholder">
+                                <input required name="dateout" style="border: none; border-bottom: 1px solid lightgray;" type="date" class="form-control" id="formGroupExampleInput6" placeholder="Another input placeholder">
                             </div>
                         </div>
                         <div class="row">

@@ -15,6 +15,9 @@
 	<link href="./css/css.css" rel="stylesheet" type="text/css">
 	<script src="./js/jquery-1.9.1.min.js"></script>
 	<script src="./js/js.js"></script>
+
+	<!-- animate -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<!-- <script src="./plugin/js/jquery.js"></script>
 	<script src="./plugin/js/bootstrap.js"></script> -->
 </head>
@@ -108,7 +111,7 @@
 		<a title="<?= $title['text']; ?>" href="#">
 			<div class="title container-fluid" style="background:url(&#39;./img/<?= $title['img']; ?>&#39;); background-size:cover; background-position: center;"></div><!--標題-->
 			<!-- <div class="my-title-text-1">最細心的照料</div> -->
-			<div class="col-2 my-title-text">讓貓 <br> 有家的<br>感覺</div>
+			<div class="col-2 my-title-text animate__animated animate__bounceIn">讓貓 <br> 有家的<br>感覺</div>
 		</a>
 
 		<!-- 結束title圖片 -->
@@ -251,12 +254,19 @@
 		<!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?></span>
 		<span class="t col">進站總人數 :<?= $Total->find(1)['total']; ?> </span> -->
 	</div>
+	<!-- 預約成功帶訊息回首頁 -->
 	<?php
-	if (isset($_GET['book'])) {
-		echo "<script>alert('預約成功，我們會於二十四小時之內與您聯繫');</script>";
+	if (isset($_SESSION['book'])) {
+		echo "<script>alert('" . $_SESSION['book'] . "');</script>";
+		unset($_SESSION['book']); // 顯示後清除session中的消息
 	}
+	// if (isset($_GET['book'])) {
+	// 	echo "<script>alert('預約成功，我們會於二十四小時之內與您聯繫');</script>";
+	// 	to("index.php");
+	// }
 	?>
 	<link rel="stylesheet" href="./plugin/js/bootstrap.js">
+
 </body>
 
 </html>

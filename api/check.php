@@ -12,14 +12,14 @@ switch ($table) {
         }
         break;
     case "book":
-        if (!empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['name'])&& !empty($_POST['catname'])&& !empty($_POST['datein']) && !empty($_POST['dateout'])){
-
+        if (!empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['name']) && !empty($_POST['catname']) && !empty($_POST['datein']) && !empty($_POST['dateout'])) {
+            $_SESSION['book'] = '預約成功，我們會於二十四小時之內與您聯繫';;
             $Book->save($_POST);
-            to("../index.php?book=1");
-        }else{
+            to("../index.php");
+        } else {
             to("../front/book.php?error=請填寫完整");
         }
 
-      
+
         break;
 }
