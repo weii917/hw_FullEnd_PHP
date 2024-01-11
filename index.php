@@ -7,6 +7,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>卓越科技大學校園資訊系統</title>
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;600&display=swap" rel="stylesheet">
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="./plugin/css/bootstrap.css">
 	<script src="./plugin/js/bootstrap.bundle.js"></script>
