@@ -6,7 +6,7 @@
                 <tbody>
                     <tr class="yel">
                         <td width="70%">住宿需知</td>
-                        <td width="10%">次選單數</td>
+                        <td width="10%">次項目數</td>
                         <td width="10%">顯示</td>
                         <td width="10%">刪除</td>
                         <td></td>
@@ -40,21 +40,23 @@
             </table>
             <!-- 處理分頁 -->
             <!-- 判斷當前頁等於字型變大 -->
-            <div class="cent">
-                <?php
-                if ($now > 1) {
-                    $prev = $now - 1;
-                    echo "<a href='?do=$do&p=$prev'> < </a>";
-                }
-                for ($i = 1; $i <= $pages; $i++) {
-                    $fontsize = ($now == $i) ? '24px' : '16px';
-                    echo "<a href='?do=$do&p=$i' style='font-size:$fontsize'> $i </a>";
-                }
-                if ($now < $pages) {
-                    $next = $now + 1;
-                    echo "<a href='?do=$do&p=$next'> > </a>";
-                }
-                ?>
+            <div class="mt-3">
+                <ul class="nav nav-pills justify-content-center">
+                    <?php
+                    if ($now > 1) {
+                        $prev = $now - 1;
+                        echo "<li class='nav-item'><a class='text-bg-light nav-link' href='?do=$do&p=$prev'><i class='fa-solid fa-backward'></i></a></li>";
+                    }
+                    for ($i = 1; $i <= $pages; $i++) {
+                        $activeClass = ($now == $i) ? 'bg-dark-subtle' : '';
+                        echo "<li class='nav-item '><a class='text-bg-light nav-link $activeClass' href='?do=$do&p=$i'>$i</a></li>";
+                    }
+                    if ($now < $pages) {
+                        $next = $now + 1;
+                        echo "<li class='nav-item'><a class=' text-bg-light nav-link' href='?do=$do&p=$next'><i class='fa-solid fa-forward'></i></a></li>";
+                    }
+                    ?>
+                </ul>
             </div>
             <table style="margin-top:40px; width:100%;">
                 <tbody>

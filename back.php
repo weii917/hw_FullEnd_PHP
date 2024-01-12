@@ -16,11 +16,14 @@ if (!isset($_SESSION['login'])) {
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.118.2">
   <title>Dashboard Template · Bootstrap v5.3</title>
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;600&display=swap" rel="stylesheet">
   <!--bootstrap css js -->
   <link rel="stylesheet" href="./plugin/css/bootstrap.css">
   <script src="./plugin/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--bootstrap css js end -->
   <!-- 乙級原有的 -->
   <link href="./css/css.css" rel="stylesheet" type="text/css">
@@ -275,8 +278,8 @@ if (!isset($_SESSION['login'])) {
   </header>
 
   <div class="container-fluid">
-    <div class=" row">
-      <div style="background-color: #B9887D!important; color:aliceblue!important;" class="sidebar border border-right col-md-3 col-lg-2 p-0">
+    <div class="row">
+      <div style="background-color: #B9887D!important; color:aliceblue!important;" class="sidebar border border-right col-md-3 col-lg-2 pb-5">
         <div style="background-color: #B9887D !important;" class="offcanvas-md offcanvas-end " tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="sidebarMenuLabel">貓旅館</h5>
@@ -493,43 +496,43 @@ if (!isset($_SESSION['login'])) {
     </main>
   </div>
 
-  <div class="row mt-5 my-footer">
-		<div class="container">
-			<footer class="">
-				<ul class="nav justify-content-center border-bottom pb-3 mb-5 mt-5 p-5">
-					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Home</a></li>
-					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Features</a></li>
-					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Pricing</a></li>
-					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">FAQs</a></li>
-					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">About</a></li>
-				</ul>
+  <div class="container-fluid my-footer">
+    <div class="container">
+      <footer class="">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-5 p-5">
+          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Home</a></li>
+          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Features</a></li>
+          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Pricing</a></li>
+          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">FAQs</a></li>
+          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">About</a></li>
+        </ul>
 
-				<div class=" col-4 mx-auto">
-					<p class=" text-white"><?= $Bottom->find(2)['bottom']; ?><br><?= $Bottom->find(3)['bottom']; ?></p>
+        <div class=" col-4 mx-auto">
+          <p class=" text-white"><?= $Bottom->find(2)['bottom']; ?><br><?= $Bottom->find(3)['bottom']; ?></p>
 
-				</div>
+        </div>
 
-				<div class="mx-auto col-4 d-flex flex-column flex-sm-row w-10 gap-2">
-					<label for="newsletter1" class="visually-hidden">Email address</label>
-					<input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-					<button class="btn btn-outline-secondary" type="button">Subscribe</button>
-				</div>
-				<ul class="nav justify-content-center  pb-3 mt-4">
-					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-line"></i></a></li>
-					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
-					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
-				</ul>
-				<div class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
-					進站總人數 :<?= $Total->find(1)['total']; ?>
-				</div>
+        <div class="mx-auto col-4 d-flex flex-column flex-sm-row w-10 gap-2">
+          <label for="newsletter1" class="visually-hidden">Email address</label>
+          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+          <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+        </div>
+        <ul class="nav justify-content-center  pb-3 mt-4">
+          <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-line"></i></a></li>
+          <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
+          <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+        <div class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
+          進站總人數 :<?= $Total->find(1)['total']; ?>
+        </div>
 
 
-			</footer>
-		</div>
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      </footer>
+    </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script>
-  <script src="./plugin/js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script>
+    <script src="./plugin/js/dashboard.js"></script>
 </body>
 
 </html>

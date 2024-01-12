@@ -1,5 +1,4 @@
-<div class="mt-5">
-	<!-- <?php include "marquee.php"; ?> -->
+<div class="row mt-5">
 	<!-- <div style="height:32px; display:block;"></div> -->
 	<div id="item-1-us" class="col-12 col-lg-8 mx-auto about-us-box">
 		<div id="about-us-left" class="row mt-5 mb-5">
@@ -58,11 +57,11 @@
 
 	<!--item start  -->
 	<div id="item-2-room"></div>
-	<div class="room mx-auto col-10">
+	<div class="room mx-auto col-10 col-sm-10">
 		<!-- d-flex讓card一樣高 -->
 		<div class="row justify-content-end ">
 
-			<h1 class="col-2 text-end border-bottom">房型</h1>
+			<h1 class="col-12 col-sm-12 col-lg-2 text-end border-bottom">房型</h1>
 		</div>
 		<div class="row">
 
@@ -212,10 +211,10 @@
 	<!--item end  -->
 	<!--  -->
 	<div id="item-3-contact"></div>
-	<div class="my-contact-container">
+	<div class="mx-auto col-10 col-sm-10 my-contact-container">
 		<div class="row justify-content-start ">
 
-			<h1 class="col-2 text-end border-bottom">聯絡我們</h1>
+			<h1 class="col-12 col-sm-12 col-lg-2 text-end border-bottom">聯絡我們</h1>
 		</div>
 		<div class="container my-iframe-box ">
 
@@ -255,12 +254,12 @@
 	</div>
 
 	<div id="item-5-news"></div>
-	<div class="container-fluid my-news-container">
-		<div class="row justify-content-end ">
+	<div class="col-12 col-sm-12 col-lg-7 mx-auto my-news-container">
+		<div class="d-flex justify-content-end ">
 
-			<h1 class="d-flex col-2 text-end border-bottom">住宿須知</h1>
+			<h1 class="d-flex col-12 col-sm-12 col-lg-2 text-end border-bottom">住宿須知</h1>
 		</div>
-		<div class="mx-auto my-news col-6">
+		<div class="mx-auto my-news">
 			<i class="fa-solid fa-paperclip my-news-icon"></i>
 			<!-- <div class="text-center mt-4 h3">住宿須知
 
@@ -291,9 +290,7 @@
 
 				?>
 			</ul>
-			<div id="altt" style="position: absolute; width: 350px; min-height: 100px; background-color: rgb(255, 255, 204); top: 50px; left: 130px; z-index: 99; display: none; padding: 5px; border: 3px double rgb(255, 153, 0); background-position: initial initial; background-repeat: initial initial;">
 
-			</div>
 
 		</div>
 	</div>

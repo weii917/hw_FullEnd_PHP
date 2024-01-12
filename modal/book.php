@@ -1,5 +1,5 @@
 <!-- 9.建立modal新增圖片的畫面 -->
-<div class="container p-5 ">
+<div class="container p-3 ">
     <h3 class='fs-3 fw-bold'>新增訂房</h3>
     <hr>
     <form action="./api/add.php" method="post" enctype="multipart/form-data">

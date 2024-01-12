@@ -93,9 +93,13 @@ if (isset($_GET['error'])) {
 	<div class="container-fluid">
 
 		<div class="row d-flex">
-			<div class="col-6  login-box pb-5 justify-content-center d-flex flex-column align-items-start">
-				<h2 class="login-logo"><a href="../index.php">貓旅</a></h2>
-				<div class=" login p-5">
+			<div class="col-12 col-sm-6 col-lg-6 login-box pb-5 justify-content-center d-flex flex-column align-items-center">
+				<h2 class="login-logo">
+					<h2 class="login-logo"><i class="fa-solid fa-paw"></i>
+						<a class="navbar-brand link-offset-2 link-underline link-underline-opacity-10 ms-2" href="../index.php">貓旅</a>
+					</h2>
+				</h2>
+				<div class="login p-5">
 
 					<form class="" method="post" action="../api/check.php">
 						<!-- Email input -->
@@ -139,15 +143,15 @@ if (isset($_GET['error'])) {
 				</div>
 
 			</div>
-			<div class="col-6 login-box px-0">
+			<div class="col-12 col-sm-6 col-lg-6 login-box px-0">
 				<img class="login-img" src="https://images.unsplash.com/photo-1683000789824-b7529dcb26a0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
 			</div>
 		</div>
 	</div>
-	<div class="row my-footer">
+	<div class="container-fluid my-footer">
 		<div class="container">
 			<footer class="">
-				<ul class="nav justify-content-center border-bottom pb-3 mb-5 mt-5 p-5">
+				<ul class="nav justify-content-center border-bottom pb-3 mb-5 p-5">
 					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Home</a></li>
 					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Features</a></li>
 					<li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Pricing</a></li>

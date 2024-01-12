@@ -2,13 +2,12 @@
 
 /* CSS Document */
 body {
-	padding: 0px;
+	padding: 0px !important;
 	margin: 0px !important;
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 	font-family: 'Noto Sans TC', sans-serif !important;
 	font-size: 16px !important;
 	background-color: #f5ebe0 !important;
-	font-family: 'Noto Sans TC', sans-serif;
 
 }
 
@@ -49,19 +48,16 @@ body {
 	overflow: auto;
 }
 
-#main {
-	/* width: 1024px;
-	height: 768px; */
-	/* margin: 10px auto 10px auto;
-	border: #EE7728 1px solid;
-	position: relative; */
-}
 
 .title {
-	width: 100%;
-	height: 90vh;
 	position: relative;
-	background-size: cover;
+}
+
+.title-img {
+
+	height: 90vh;
+
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
@@ -69,20 +65,13 @@ body {
 .my-title-text {
 	width: 200px;
 	position: absolute;
-	/* 絕對定位 */
 	bottom: 50%;
-	/* 距離容器底部的距離 */
-	left: 50%;
-	/* 距離容器左側的距離 */
+	left: 45%;
 	background-color: rgba(203, 176, 176, 0.5);
 	border: 1px solid rgba(203, 176, 176, 0.8);
-	/* 背景色透明度，可以根據需要調整 */
 	color: #ffffff;
-	/* 文字顏色 */
 	padding: 10px;
-	/* 內邊距，使得文字不會貼得太緊 */
 	font-size: 56px;
-	/* 文字大小，根據需要調整 */
 }
 
 .about-us-box {
@@ -211,7 +200,7 @@ body {
 
 .my-news {
 	font-size: 18px;
-	width: 60%;
+	width: 100%;
 	padding: 2px;
 	/* height: 80vh; */
 	/* margin-top: 20vh; */
@@ -251,15 +240,6 @@ border: 1px solid rgba(203, 176, 176, 0.8);  */
 }
 
 
-.switch-img-box {
-	/* height: 70vh; */
-	/* width: 100%;
-	margin-top: 30vh;
-	margin-bottom: 20vh;
-	padding: 30px; */
-
-}
-
 
 
 .room {
@@ -267,7 +247,7 @@ border: 1px solid rgba(203, 176, 176, 0.8);  */
 	position: relative;
 	overflow: hidden;
 	margin-top: 20vh;
-	margin-top: 20vh;
+
 }
 
 
@@ -302,47 +282,20 @@ border: 1px solid rgba(203, 176, 176, 0.8);  */
 
 }
 
-.room-1 {
-	/* position: absolute;
-	bottom: 0px;
-	width: 33%;
-	left: 5%; */
 
-}
 
 .room-2-text {
 	width: 200px;
 	position: absolute;
-	/* 絕對定位 */
 	bottom: 5%;
-	/* 距離容器底部的距離 */
 	left: 60%;
-	/* 距離容器左側的距離 */
 	background-color: rgba(164, 33, 33, 0.7);
-	/* border: 1px solid rgba(203, 176, 176, 0.8); */
-	/* 背景色透明度，可以根據需要調整 */
 	color: #2c0d0d;
-	/* 文字顏色 */
 	padding: 10px;
-	/* 內邊距，使得文字不會貼得太緊 */
 	font-size: 28px;
-	/* 文字大小，根據需要調整 */
 }
 
-.room-2 {
-	/* position: absolute;
-	left: 25%; */
-	/* width: 33%; */
 
-}
-
-.room-3 {
-	/* position: absolute;
-	bottom: 0px;
-	right: 8%; */
-	/* width: 33%; */
-
-}
 
 .my-box-shadow {
 	box-shadow:
@@ -358,78 +311,6 @@ border: 1px solid rgba(203, 176, 176, 0.8);  */
 	margin: auto;
 	overflow: auto;
 }
-
-/* .t {
-	font-weight: 800;
-	display: block;
-	text-align: center;
-	padding: 10px 1px 10px 1px;
-}
-
-.botli {
-	border-bottom: #333 1px solid;
-}
-
-.mainmu {
-	position: relative;
-	border-radius: 10px;
-	background: url(../icon/menu.fw.png) center no-repeat;
-	background-size: cover;
-	line-height: 30px;
-	padding: 2px 10px 2px 10px;
-	margin: 7px 1px 7px 1px;
-	/* 加高度 */
-
-
-/* .mainmu:hover {
-	background: url(../icon/menu2.fw.png) center no-repeat;
-	background-size: cover;
-	hover時變更主選單層級優先權
-	z-index: 8;
-}
-
-.mainmu2 {
-	position: relative;
-	border-radius: 10px;
-	background: url(../icon/menu3.fw.png)center no-repeat;
-	background-size: 100% 100%;
-	line-height: 30px;
-	padding: 2px 10px 2px 10px;
-	margin: 7px 1px 7px 1px;
-	top: -10px;
-	讓次選單在主選單上方
-	z-index: 9;
-}
-
-.mainmu2:hover {
-	background: url(../icon/menu4.fw.png) center no-repeat;
-	background-size: cover;
-}
-
-.mw {
-	position: relative;
-	left: 100px;
-	次選單預設不顯示
-	display: none;
-	調整次選單位置蓋住主選單
-	top: -20px;
-}
-
-*/
-/* #lf {
-	height: 540px;
-	width: 21%;
-	display: inline-block;
-}
-
-#menuput {
-	width: 100%;
-	height: 75%;
-	position: relative;
-	padding: 5px;
-	display: block;
-	margin: 3px;
-}  */
 
 
 .cent {
@@ -492,7 +373,7 @@ a:hover {
 .login-box {
 	position: relative;
 	height: 100vh;
-	width: 50%;
+	/* width: 50%; */
 }
 
 .login-img,
@@ -501,15 +382,15 @@ a:hover {
 	height: 100%;
 }
 
-.login-logo,
-.book-logo {
+.login-logo {
 	position: absolute;
 	height: 10vh;
 	width: 50vh;
 	left: 5%;
 	top: 2%;
-
 }
+
+
 
 .login {
 	width: 50vh;
@@ -558,7 +439,7 @@ a:hover {
 .book-box {
 	position: relative;
 	height: 100vh;
-	width: 50%;
+	/* width: 50%; */
 }
 
 /* iframe */

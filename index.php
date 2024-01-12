@@ -1,7 +1,7 @@
 <?php include_once "./api/db.php"; ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0040)http://127.0.0.1/test/exercise/collage/? -->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,7 +16,7 @@
 	<script src="./plugin/js/bootstrap.bundle.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- 乙級原有 -->
-	<link href="./css/css.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./css/css.css">
 	<script src="./js/jquery-1.9.1.min.js"></script>
 	<script src="./js/js.js"></script>
 
@@ -97,6 +97,7 @@
 			</div>
 		</div>
 	</nav>
+	<!-- modal顯示區塊 -->
 	<div id="cover" style="display:none; ">
 		<div id="coverr">
 			<a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;" onclick="cl('#cover')">X</a>
@@ -106,16 +107,16 @@
 		</div>
 	</div>
 
-	<div class=" mb-3">
+	<div class="title container-fluid p-0 mb-3">
 
 		<!-- 14.顯示title圖片 -->
 		<?php
 		$title = $Title->find(['sh' => 1]);
 		?>
 		<a title="<?= $title['text']; ?>" href="#">
-			<div class="title container-fluid" style="background:url(&#39;./img/<?= $title['img']; ?>&#39;); background-size:cover; background-position: center;"></div><!--標題-->
+			<div class="title-img col" style="background:url(&#39;./img/<?= $title['img']; ?>&#39;); background-size:cover; background-position: center;"></div><!--標題-->
 			<!-- <div class="my-title-text-1">最細心的照料</div> -->
-			<div class="col-2 my-title-text animate__animated animate__bounceIn">讓貓 <br> 有家的<br>感覺</div>
+			<div class="col-12 col-lg-2 my-title-text animate__animated animate__bounceIn">讓貓 <br> 有家的<br>感覺</div>
 		</a>
 
 		<!-- 結束title圖片 -->
@@ -125,7 +126,7 @@
 	</div>
 
 
-	<div class="">
+	<div class="container-fluid">
 
 		<!-- main -->
 
@@ -222,8 +223,8 @@
 	<div style="clear:both;"></div>
 	<!-- 頁尾顯示區塊 -->
 
-	<div class="row mt-5 my-footer">
-		<div class="container">
+	<div class="container-fluid mt-5 my-footer">
+		<div class="row">
 			<footer class="">
 				<ul class="nav justify-content-center border-bottom pb-3 mb-5 mt-5 p-5">
 					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Home</a></li>
