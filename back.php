@@ -485,11 +485,11 @@ if (!isset($_SESSION['login'])) {
     <div class="row">
       <footer class="col">
         <ul class="mx-auto col-12 col-sm-8 col-lg-6  nav justify-content-center  mb-5 mt-5">
-          <li class="nav-item"><a href="../index.php" class="nav-link px-4 text-white">Home</a></li>
-          <li class="nav-item"><a href="../index.php#item-4-img" class="nav-link px-4 text-white">Features</a></li>
-          <li class="nav-item"><a href="../index.php#item-2-room" class="nav-link px-4 text-white">Pricing</a></li>
-          <li class="nav-item"><a href="../index.php#item-5-news" class="nav-link px-4 text-white">FAQs</a></li>
-          <li class="nav-item"><a href="../index.php#item-3-contact" class="nav-link px-4 text-white">About</a></li>
+          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Home</a></li>
+          <li class="nav-item"><a href="./index.php#item-4-img" class="nav-link px-4 text-white">Features</a></li>
+          <li class="nav-item"><a href="./index.php#item-2-room" class="nav-link px-4 text-white">Pricing</a></li>
+          <li class="nav-item"><a href="./index.php#item-5-news" class="nav-link px-4 text-white">FAQs</a></li>
+          <li class="nav-item"><a href="./index.php#item-3-contact" class="nav-link px-4 text-white">About</a></li>
         </ul>
         <hr>
         <div class="col-12 col-sm-4  mx-auto">
