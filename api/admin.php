@@ -1,7 +1,7 @@
 <div class="col" style="height: 80%;">
     <div class="row mt-5 my-box-shadow">
         <p class="text-center fs-3 fw-bold">管理者帳號管理</p>
-        <form method="post" action="./api/edit.php">
+        <form method=" post" action="./api/edit.php">
             <table class="mx-auto" style="text-align: center;width:60%">
                 <tbody>
                     <tr class="yel">

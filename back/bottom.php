@@ -1,14 +1,14 @@
 <div class="col" style="height: 80%;">
     <div class="row mt-5 my-box-shadow">
         <p class="text-center fs-3 fw-bold">頁尾版權資料管理</p>
-        <form method="post" action="/api/edit_info.php">
+        <form method="post" action="./api/edit_info.php">
             <table style="width:50%;margin:auto">
                 <tbody>
                     <tr>
                         <td width="50%">頁尾版權資料</td>
                         <td width="50%">
                             <input class="form-control" type="text" name="bottom[]" value="<?= $Bottom->find(1)['bottom']; ?>">
-                            <input type="hidden" name="table" value="<?= $do; ?>">
+
 
                         </td>
                     </tr>
@@ -16,7 +16,7 @@
                         <td width="50%">地址</td>
                         <td width="50%">
                             <input class="form-control" type="text" name="bottom[]" value="<?= $Bottom->find(2)['bottom']; ?>">
-                            <input type="hidden" name="table" value="<?= $do; ?>">
+
 
                         </td>
                     </tr>
