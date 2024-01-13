@@ -16,7 +16,7 @@
                     <!-- 'menu_id'=0是主選單 -->
                     <?php
 
-                    $rows = $DB->all(['menu_id' => 0]);
+                    $rows = $DB->all();
                     foreach ($rows as $row) {
                     ?>
                         <tr>
@@ -26,8 +26,6 @@
                             <td>
                                 <input class="form-control" type="text" name="href[]" value="<?= $row['href']; ?>">
                             </td>
-                            <!-- count計算次選單的menu_id有幾個等於主選單的id，就知道此主選單有多少次選單 -->
-                            <!-- <td><?= $Menu->count(['menu_id' => $row['id']]); ?></td> -->
                             <td>
                                 <input class="form-check-input" type="checkbox" name="sh[]" value="<?= $row['id']; ?>" <?= ($row['sh'] == 1) ? 'checked' : ''; ?>>
                             </td>

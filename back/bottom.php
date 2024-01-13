@@ -7,7 +7,7 @@
                     <tr>
                         <td width="50%">頁尾版權資料</td>
                         <td width="50%">
-                            <input class="form-control" type="text" name="bottom" value="<?= $Bottom->find(1)['bottom']; ?>">
+                            <input class="form-control" type="text" name="bottom[]" value="<?= $Bottom->find(1)['bottom']; ?>">
                             <input type="hidden" name="table" value="<?= $do; ?>">
 
                         </td>
@@ -15,7 +15,7 @@
                     <tr>
                         <td width="50%">地址</td>
                         <td width="50%">
-                            <input class="form-control" type="text" name="bottom" value="<?= $Bottom->find(2)['bottom']; ?>">
+                            <input class="form-control" type="text" name="bottom[]" value="<?= $Bottom->find(2)['bottom']; ?>">
                             <input type="hidden" name="table" value="<?= $do; ?>">
 
                         </td>
@@ -23,7 +23,7 @@
                     <tr>
                         <td width="50%">電話</td>
                         <td width="50%">
-                            <input class="form-control" type="text" name="bottom" value="<?= $Bottom->find(3)['bottom']; ?>">
+                            <input class="form-control" type="text" name="bottom[]" value="<?= $Bottom->find(3)['bottom']; ?>">
                             <input type="hidden" name="table" value="<?= $do; ?>">
 
                         </td>

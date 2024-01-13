@@ -394,7 +394,7 @@ if (!isset($_SESSION['login'])) {
                 <!-- <span class="t botli">主選單區</span> -->
                 <!-- 撈出menu_id為零=>主選單並且sh=>顯示1 -->
                 <?php
-                $mainmu = $Menu->all(['sh' => 1, 'menu_id' => 0]);
+                $mainmu = $Menu->all(['sh' => 1]);
                 foreach ($mainmu as $main) {
                 ?>
                   <li class="nav-item">
@@ -405,21 +405,6 @@ if (!isset($_SESSION['login'])) {
                       </svg>
                       <?= $main['text']; ?>
 
-                      <!-- <?php
-
-                            if ($Menu->count(['menu_id' => $main['id']]) > 0) {
-                              echo "<div>";
-                              $subs = $Menu->all(['menu_id' => $main['id']]);
-                              foreach ($subs as $sub) {
-                                echo "<a href='{$sub['href']}'>";
-                                echo "<div class='mainmu2'>";
-                                echo $sub['text'];
-                                echo "</div>";
-                                echo "</a>";
-                              }
-                              echo "</div>";
-                            }
-                            ?> -->
 
                     </a>
                   </li>
@@ -444,14 +429,14 @@ if (!isset($_SESSION['login'])) {
                   Sign out
                 </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#">
                   <svg class="bi">
                     <use xlink:href="#file-earmark-text" />
                   </svg>
                   Year-end sale
                 </a>
-              </li>
+              </li> -->
             </ul>
 
             <hr class="my-3">
@@ -497,42 +482,45 @@ if (!isset($_SESSION['login'])) {
   </div>
 
   <div class="container-fluid my-footer">
-    <div class="container">
-      <footer class="">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-5 p-5">
-          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Home</a></li>
-          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Features</a></li>
-          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Pricing</a></li>
-          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">FAQs</a></li>
-          <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">About</a></li>
+    <div class="row">
+      <footer class="col">
+        <ul class="mx-auto col-12 col-sm-8 col-lg-6  nav justify-content-center  mb-5 mt-5">
+          <li class="nav-item"><a href="../index.php" class="nav-link px-4 text-white">Home</a></li>
+          <li class="nav-item"><a href="../index.php#item-4-img" class="nav-link px-4 text-white">Features</a></li>
+          <li class="nav-item"><a href="../index.php#item-2-room" class="nav-link px-4 text-white">Pricing</a></li>
+          <li class="nav-item"><a href="../index.php#item-5-news" class="nav-link px-4 text-white">FAQs</a></li>
+          <li class="nav-item"><a href="../index.php#item-3-contact" class="nav-link px-4 text-white">About</a></li>
         </ul>
-
-        <div class=" col-4 mx-auto">
+        <hr>
+        <div class="col-12 col-sm-4  mx-auto">
           <p class=" text-white"><?= $Bottom->find(2)['bottom']; ?><br><?= $Bottom->find(3)['bottom']; ?></p>
 
         </div>
 
-        <div class="mx-auto col-4 d-flex flex-column flex-sm-row w-10 gap-2">
+        <div class="mx-auto col-12 col-sm-4 d-flex flex-column flex-sm-row w-10 gap-2">
           <label for="newsletter1" class="visually-hidden">Email address</label>
           <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
           <button class="btn btn-outline-secondary" type="button">Subscribe</button>
         </div>
-        <ul class="nav justify-content-center  pb-3 mt-4">
+        <ul class="mx-auto col-12 col-sm-4 nav justify-content-center  pb-3 mt-4">
           <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-line"></i></a></li>
           <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
           <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
         </ul>
-        <div class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
+        <div class="mx-auto col-12 col-sm-4 mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
           進站總人數 :<?= $Total->find(1)['total']; ?>
         </div>
 
 
       </footer>
     </div>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?></span>
+		<span class="t col">進站總人數 :<?= $Total->find(1)['total']; ?> </span> -->
+  </div>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script>
-    <script src="./plugin/js/dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script>
+  <script src="./plugin/js/dashboard.js"></script>
 </body>
 
 </html>

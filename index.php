@@ -225,31 +225,31 @@
 
 	<div class="container-fluid mt-5 my-footer">
 		<div class="row">
-			<footer class="">
-				<ul class="nav justify-content-center border-bottom pb-3 mb-5 mt-5 p-5">
+			<footer class="col">
+				<ul class="mx-auto col-12 col-sm-8 col-lg-6  nav justify-content-center  mb-5 mt-5">
 					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Home</a></li>
 					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Features</a></li>
 					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Pricing</a></li>
 					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">FAQs</a></li>
 					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">About</a></li>
 				</ul>
-
-				<div class=" col-4 mx-auto">
+				<hr>
+				<div class="col-12 col-sm-4  mx-auto">
 					<p class=" text-white"><?= $Bottom->find(2)['bottom']; ?><br><?= $Bottom->find(3)['bottom']; ?></p>
 
 				</div>
 
-				<div class="mx-auto col-4 d-flex flex-column flex-sm-row w-10 gap-2">
+				<div class="mx-auto col-12 col-sm-4 d-flex flex-column flex-sm-row w-10 gap-2">
 					<label for="newsletter1" class="visually-hidden">Email address</label>
 					<input id="newsletter1" type="text" class="form-control" placeholder="Email address">
 					<button class="btn btn-outline-secondary" type="button">Subscribe</button>
 				</div>
-				<ul class="nav justify-content-center  pb-3 mt-4">
+				<ul class="mx-auto col-12 col-sm-4 nav justify-content-center  pb-3 mt-4">
 					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-line"></i></a></li>
 					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
 					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
 				</ul>
-				<div class="mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
+				<div class="mx-auto col-12 col-sm-4 mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
 					進站總人數 :<?= $Total->find(1)['total']; ?>
 				</div>
 
