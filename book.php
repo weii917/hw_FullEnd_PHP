@@ -215,16 +215,17 @@ if (isset($_GET['error'])) {
             </footer>
             <footer class="container bg-dark.bg-gradient p-3">
                 <div class="row">
-                    <div class="col-12 col-sm-8 mx-auto d-flex justify-content-between">
+                    <div class="col-12 mx-auto d-flex justify-content-between">
                         <div class="col-12 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?>
 
                         </div>
-                        <div class="col-2 text-end ">
-                            進站總人數 :<?= $Total->find(1)['total']; ?>
-                        </div>
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-12 text-end mx-auto">
+                        進站總人數 :<?= $Total->find(1)['total']; ?>
+                    </div>
+                </div>
             </footer>
         </div>
         <!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?></span>
