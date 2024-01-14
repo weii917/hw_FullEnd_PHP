@@ -54,10 +54,10 @@
 		}
 	</script>
 	<!--輪播圖片js end  -->
-
+	<img class="fixed-image" src="./img/bg.jpg" alt="fixed-image" />
 	<!--item start  -->
 	<div id="item-2-room"></div>
-	<div class="room mx-auto col-10 col-sm-10">
+	<div class="empty-container room mx-auto container-fluid">
 		<!-- d-flex讓card一樣高 -->
 		<div class="row justify-content-end ">
 
@@ -211,12 +211,12 @@
 	<!--item end  -->
 	<!--  -->
 	<div id="item-3-contact"></div>
-	<div class="mx-auto col-10 col-sm-10 my-contact-container">
+	<div class="mx-auto  col-10 col-sm-10 my-contact-container">
 		<div class="row justify-content-start ">
 
 			<h1 class="col-12 col-sm-12 col-lg-2 text-end border-bottom">聯絡我們</h1>
 		</div>
-		<div class="container my-iframe-box ">
+		<div class="container p-5 my-iframe-box ">
 
 			<div class="row">
 

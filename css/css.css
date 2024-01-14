@@ -8,6 +8,24 @@ body {
 	font-family: 'Noto Sans TC', sans-serif !important;
 	font-size: 16px !important;
 	background-color: #f5ebe0 !important;
+	position: relative;
+
+}
+
+img.fixed-image {
+	padding: 0px !important;
+	margin: 0px !important;
+	min-height: 100vh;
+	position: fixed;
+	width: 100%;
+	z-index: -5;
+	bottom: 0;
+	left: 0;
+}
+
+.empty-container {
+	min-height: 70vh;
+	background-color: rgba(255, 255, 255, 0.8);
 
 }
 
@@ -211,10 +229,10 @@ td {
 	margin-bottom: 10vh;
 	margin-top: 5vh;
 	padding: 5px 10px 5px 10px;
-	color: #ffedd8;
-	background-color: #393d3f;
-	/* background: rgba(255, 251, 236, 0.771); */
-	/* border: #0C3 dashed 3px; */
+	/* color: #ffedd8;
+	background-color: #393d3f; */
+	color: #393d3f;
+	background-color: rgba(255, 227, 183, 0.3);
 	position: relative;
 }
 
