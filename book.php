@@ -17,15 +17,18 @@ if (isset($_GET['error'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;600&display=swap" rel="stylesheet">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="../plugin/css/bootstrap.css">
-    <script src="../plugin/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./plugin/css/bootstrap.css">
+    <script src="./plugin/js/bootstrap.bundle.js"></script>
+    <script src="./plugin/js/bootstrap.js"></script>
+
+
     <!-- css -->
-    <link href="../css/css.css" rel="stylesheet" type="text/css">
+    <link href="./css/css.css" rel="stylesheet" type="text/css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- 乙級原有 -->
-    <script src="../js/jquery-1.9.1.min.js"></script>
-    <script src="../js/js.js"></script>
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/js.js"></script>
 
 </head>
 
@@ -33,14 +36,14 @@ if (isset($_GET['error'])) {
     <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #B9887D; color:aliceblue;">
         <div class="container-fluid">
             <i class="fa-solid fa-paw"></i>
-            <a class="navbar-brand ms-2" href="../index.php">貓旅</a>
+            <a class="navbar-brand ms-2" href="./index.php">貓旅</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#box1"><span class="my-size-big">&nbsp;<i class="fa-solid fa-house text-white "></i>&nbsp;&nbsp;
+                        <a class="nav-link active" aria-current="page" href="./index.php"><span class="my-size-big">&nbsp;<i class="fa-solid fa-house text-white "></i>&nbsp;&nbsp;
                             </span></a>
                     </li>
                     <!-- 主選單start -->
@@ -68,12 +71,12 @@ if (isset($_GET['error'])) {
                 <?php
                 if (isset($_SESSION['login'])) {
                 ?>
-                    <button class="btn btn-outline-light p-2 m-2" onclick="lo('../api/logout.php')" type="button">登出</button>
-                    <button class="my-btn btn btn-outline-light p-2" onclick="lo('../back.php')">返回管理</button>
+                    <button class="btn btn-outline-light p-2 m-2" onclick="lo('./api/logout.php')" type="button">登出</button>
+                    <button class="my-btn btn btn-outline-light p-2" onclick="lo('./back.php')">返回管理</button>
                 <?php
                 } else {
                 ?>
-                    <button class="my-btn btn btn-outline-light" onclick="lo('./login.php')">管理登入</button>
+                    <button class="my-btn btn btn-outline-light" onclick="lo('./front/login.php')">管理登入</button>
                 <?php
                 }
                 ?>
@@ -88,7 +91,7 @@ if (isset($_GET['error'])) {
 
 
                 <div class="row mt-5 mb-5  book p-5">
-                    <form class="" method="post" action="../api/check.php">
+                    <form class="" method="post" action="./api/check.php">
                         <!-- Email input -->
                         <h3 class="text-center mt-5 pb-3">線上預約</h3>
                         <div class="row ">
@@ -186,11 +189,11 @@ if (isset($_GET['error'])) {
         <div class="row">
             <footer class="col">
                 <ul class="mx-auto col-12 col-sm-8 col-lg-6  nav justify-content-center  mb-5 mt-5">
-                    <li class="nav-item"><a href="../index.php" class="nav-link px-4 text-white">Home</a></li>
-                    <li class="nav-item"><a href="../index.php#item-4-img" class="nav-link px-4 text-white">Features</a></li>
-                    <li class="nav-item"><a href="../index.php#item-2-room" class="nav-link px-4 text-white">Pricing</a></li>
-                    <li class="nav-item"><a href="../index.php#item-5-news" class="nav-link px-4 text-white">FAQs</a></li>
-                    <li class="nav-item"><a href="../index.php#item-3-contact" class="nav-link px-4 text-white">About</a></li>
+                    <li class="nav-item"><a href="./index.php" class="nav-link px-4 text-white">Home</a></li>
+                    <li class="nav-item"><a href="./index.php#item-4-img" class="nav-link px-4 text-white">Features</a></li>
+                    <li class="nav-item"><a href="./index.php#item-2-room" class="nav-link px-4 text-white">Pricing</a></li>
+                    <li class="nav-item"><a href="./index.php#item-5-news" class="nav-link px-4 text-white">FAQs</a></li>
+                    <li class="nav-item"><a href="./index.php#item-3-contact" class="nav-link px-4 text-white">About</a></li>
                 </ul>
                 <hr>
                 <div class="col-12 col-sm-4  mx-auto">
@@ -227,7 +230,6 @@ if (isset($_GET['error'])) {
         <!-- <span class="t col" style="line-height:123px;"><?= $Bottom->find(1)['bottom']; ?></span>
 		<span class="t col">進站總人數 :<?= $Total->find(1)['total']; ?> </span> -->
     </div>
-    <link rel="stylesheet" href="./plugin/js/bootstrap.js">
 
 </body>
 

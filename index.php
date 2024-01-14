@@ -14,6 +14,8 @@
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="./plugin/css/bootstrap.css">
 	<script src="./plugin/js/bootstrap.bundle.js"></script>
+	<script src="./plugin/js/bootstrap.js"></script>
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- 乙級原有 -->
 	<link rel="stylesheet" href="./css/css.css">
@@ -266,7 +268,6 @@
 	// 	to("index.php");
 	// }
 	?>
-	<link rel="stylesheet" href="./plugin/js/bootstrap.js">
 
 </body>
 
