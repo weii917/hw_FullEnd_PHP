@@ -16,8 +16,6 @@ switch ($table) {
         $DB->save($data);
         break;
     case "bottom":
-
-
         $data1 = $DB->find(1);
         $data2 = $DB->find(2);
         $data3 = $DB->find(3);
@@ -28,7 +26,11 @@ switch ($table) {
         $DB->save($data1);
         $DB->save($data2);
         $DB->save($data3);
-
+        break;
+    case "address":
+        unset($_POST['table']);
+        // 將資料表對應的欄位修改成post過來的值，更新回資料表
+        $DB->save($_POST);
         break;
 }
 
