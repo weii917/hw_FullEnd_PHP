@@ -38,45 +38,28 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#box1"><span class="my-size-big">&nbsp;<i class="fa-solid fa-house text-white "></i>&nbsp;&nbsp;
+						<a class="nav-link active" aria-current="page" href="index.php"><span class="my-size-big">&nbsp;<i class="fa-solid fa-house text-white "></i>&nbsp;&nbsp;
 							</span></a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link text-white" href="#item-1-us"><i class=" text-white fa-solid fa-film"></i>&nbsp;關於我們
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link  text-white" href="#item-2-room"><i class=" text-white fa-solid fa-comment"></i>&nbsp;房型介紹</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link  text-white" href="#item-4-img"><i class=" text-white fa-solid fa-comment"></i>&nbsp;環境介紹</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link  text-white" href="./front/book.php"><i class=" text-white fa-solid fa-comment"></i>&nbsp;線上預約</a>
-					</li>
+					<!-- 主選單start -->
+					<?php
+					$mainmu = $Menu->all(['sh' => 1]);
+					foreach ($mainmu as $main) {
+					?>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="<?= $main['href']; ?>">&nbsp;<?= $main['text']; ?>
+							</a>
 
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" style="font-weight: bolder;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							貓咪住宿
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#item-3-contact">聯絡我們</a></li>
-							<li><a class="dropdown-item" href="#item-5-news">住宿須知</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<!-- <li><a class="dropdown-item" href="#">Q&A</a></li> -->
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" aria-disabled="true">Disabled</a>
-					</li>
+						</li>
+					<?php
+					}
+					?>
+					<!-- 主選單end -->
+
+
 				</ul>
 				<form class="d-flex" role="search">
-					<!-- navbar用文字的 -->
-					<!-- <span class="navbar-text me-3">
-            HI~Welcome
-          </span> -->
+
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 					<!-- <button class="btn btn-outline-light" type="submit">Logout</button> -->
 				</form>
@@ -191,7 +174,7 @@
 					pp(1)
 				</script>
 			</div> -->
-
+			<!-- 輪播圖片start -->
 			<div id="carouselExampleFade" class="carousel slide carousel-fade mx-auto">
 				<div class="carousel-inner">
 					<?php
@@ -209,6 +192,7 @@
 					?>
 
 				</div>
+
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
@@ -218,6 +202,8 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
+			<!-- 輪播圖片end -->
+
 		</div>
 	</div>
 	<div style="clear:both;"></div>
@@ -225,7 +211,7 @@
 
 	<div class="container-fluid mt-5 my-footer">
 		<div class="row">
-			<footer class="col">
+			<footer class="container">
 				<ul class="mx-auto col-12 col-sm-8 col-lg-6  nav justify-content-center  mb-5 mt-5">
 					<li class="nav-item"><a href="#" class="nav-link px-4 text-white">Home</a></li>
 					<li class="nav-item"><a href="#item-4-img" class="nav-link px-4 text-white">Features</a></li>
@@ -249,10 +235,20 @@
 					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
 					<li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
 				</ul>
-				<div class="mx-auto col-12 col-sm-4 mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
-					進站總人數 :<?= $Total->find(1)['total']; ?>
-				</div>
 
+
+			</footer>
+			<footer class="container bg-dark.bg-gradient p-3">
+				<div class="row">
+					<div class="col-12 col-sm-8 mx-auto d-flex justify-content-between">
+						<div class="col-12 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?>
+
+						</div>
+						<div class="col-2 text-end ">
+							進站總人數 :<?= $Total->find(1)['total']; ?>
+						</div>
+					</div>
+				</div>
 
 			</footer>
 		</div>

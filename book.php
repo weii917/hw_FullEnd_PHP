@@ -1,4 +1,4 @@
-<?php include_once "../api/db.php";
+<?php include_once "./api/db.php";
 
 if (isset($_GET['error'])) {
     echo "<script>alert('{$_GET['error']}')</script>";
@@ -12,6 +12,10 @@ if (isset($_GET['error'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;600&display=swap" rel="stylesheet">
     <!-- bootstrap -->
     <link rel="stylesheet" href="../plugin/css/bootstrap.css">
     <script src="../plugin/js/bootstrap.bundle.js"></script>
@@ -39,42 +43,23 @@ if (isset($_GET['error'])) {
                         <a class="nav-link active" aria-current="page" href="#box1"><span class="my-size-big">&nbsp;<i class="fa-solid fa-house text-white "></i>&nbsp;&nbsp;
                             </span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../index.php#item-1-about"><i class=" text-white fa-solid fa-film"></i>&nbsp;關於我們
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-white" href="../index.php#item-2-room"><i class=" text-white fa-solid fa-comment"></i>&nbsp;房型介紹</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-white" href="../index.php#item-4-img"><i class=" text-white fa-solid fa-comment"></i>&nbsp;環境介紹</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-white" href="#"><i class=" text-white fa-solid fa-comment"></i>&nbsp;線上預約</a>
-                    </li>
+                    <!-- 主選單start -->
+                    <?php
+                    $mainmu = $Menu->all(['sh' => 1]);
+                    foreach ($mainmu as $main) {
+                    ?>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="<?= $main['href']; ?>">&nbsp;<?= $main['text']; ?>
+                            </a>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" style="font-weight: bolder;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            貓咪住宿
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#item-3-contact">聯絡我們</a></li>
-                            <li><a class="dropdown-item" href="#item-5-news">住宿須知</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <!-- <li><a class="dropdown-item" href="#">Q&A</a></li> -->
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
+                        </li>
+                    <?php
+                    }
+                    ?>
+                    <!-- 主選單end -->
                 </ul>
                 <form class="d-flex" role="search">
-                    <!-- navbar用文字的 -->
-                    <!-- <span class="navbar-text me-3">
-            HI~Welcome
-          </span> -->
+
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <!-- <button class="btn btn-outline-light" type="submit">Logout</button> -->
                 </form>
@@ -223,10 +208,19 @@ if (isset($_GET['error'])) {
                     <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
                     <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
                 </ul>
-                <div class="mx-auto col-12 col-sm-4 mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
-                    進站總人數 :<?= $Total->find(1)['total']; ?>
-                </div>
 
+            </footer>
+            <footer class="container bg-dark.bg-gradient p-3">
+                <div class="row">
+                    <div class="col-12 col-sm-8 mx-auto d-flex justify-content-between">
+                        <div class="col-12 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?>
+
+                        </div>
+                        <div class="col-2 text-end ">
+                            進站總人數 :<?= $Total->find(1)['total']; ?>
+                        </div>
+                    </div>
+                </div>
 
             </footer>
         </div>

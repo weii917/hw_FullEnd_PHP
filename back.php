@@ -515,10 +515,19 @@ if (!isset($_SESSION['login'])) {
           <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-square-instagram"></i></a></li>
           <li><a style="color:white" href="#"><i style="font-size:36px;  width:50px; height:24px;" class="fa-brands fa-facebook"></i></a></li>
         </ul>
-        <div class="mx-auto col-12 col-sm-4 mt-2 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?><br>
-          進站總人數 :<?= $Total->find(1)['total']; ?>
-        </div>
 
+      </footer>
+      <footer class="container bg-dark.bg-gradient p-3">
+        <div class="row">
+          <div class="col-12 col-sm-8 mx-auto d-flex justify-content-between">
+            <div class="col-12 text-center text-white">&copy; <?= $Bottom->find(1)['bottom']; ?>
+
+            </div>
+            <div class="col-2 text-end ">
+              進站總人數 :<?= $Total->find(1)['total']; ?>
+            </div>
+          </div>
+        </div>
 
       </footer>
     </div>
