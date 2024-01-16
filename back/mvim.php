@@ -6,6 +6,7 @@
                 <tbody>
                     <tr class="yel">
                         <td width="40%">圖片</td>
+                        <td width="30%">文字</td>
                         <td width="10%">顯示</td>
                         <td width="10%">刪除</td>
                         <td></td>
@@ -20,6 +21,7 @@
                         <!-- 做mvim時發現沒有id取用所以這裡藏一個id讓edit在處理mvim有id依據刪除編輯 -->
                         <tr>
                             <td width="45%"><img src="./img/<?= $row['img']; ?>" class="m-2" style="width:300px;height:200px" alt=""></td>
+                            <td><textarea class="form-control" type="text" name="text[]" style="width:100%;height:300px"><?= $row['text']; ?></textarea></td>
                             <input type="hidden" name="id[]" value="<?= $row['id']; ?>">
                             <td width="7%"><input class="form-check-input" type="checkbox" name="sh[]" value="<?= $row['id']; ?>" <?= ($row['sh'] == 1) ? 'checked' : ''; ?>></td>
                             <td width="7%"><input class="form-check-input" type="checkbox" name="del[]" value="<?= $row['id']; ?>"></td>

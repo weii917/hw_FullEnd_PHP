@@ -5,10 +5,8 @@
 			<div class="col-12 col-sm-7 d-flex mt-5 mx-auto">
 				<div class="about-us d-flex justify-content-center flex-column">
 					<h1 class="mb-5">關於我們</h1>
-					<p class="my-line-height">
-						歡迎來到貓旅館，<br>一個專為您的貓咪打造溫暖的地方。<br>
-						我們理解每一隻貓咪都是家庭的一部分，<br>
-						因此我們致力於提供一個舒適、安全和充滿樂趣的環境。<br>
+					<p>
+						<pre class="my-line-height"><?= $us = $Mvim->find(['sh' => 1])['text']; ?></pre>
 					</p>
 				</div>
 			</div>
@@ -85,15 +83,15 @@
 
 							<!-- </div> -->
 							<!-- lg start -->
-							<div class="modal fade" id="exampleModalLg<?= $idx ?>" tabindex="-1" aria-labelledby="exampleModalLabel-a<?= $idx ?>" aria-hidden="true">
+							<div class="modal fade" id="exampleModalLg<?= $idx ?>" tabindex="-1" aria-labelledby="exampleModalLabel<?= $idx ?>" aria-hidden="true">
 								<div class="modal-dialog modal-lg">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h1 class="modal-title fs-5" id="exampleModalLabel-a<?= $idx ?>"><?= $row['room'] ?></h1>
+											<h1 class="modal-title fs-5" id="exampleModalLabel<?= $idx ?>"><?= $row['room'] ?></h1>
 											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 										</div>
 										<div class="modal-body">
-											<?= $row['text'] ?>
+											<pre style="font-size: 16px;"><?= $row['text'] ?></pre>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

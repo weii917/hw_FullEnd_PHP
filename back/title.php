@@ -33,7 +33,8 @@
                     ?>
                         <tr class="p-2">
                             <td width="45%"><img src="./img/<?= $row['img']; ?>" class="m-2" style="width:150px;height:100px"></td>
-                            <td width="23%"><input class="form-control" type="text" name="text[]" value="<?= $row['text']; ?>" style="width:90%"></td>
+                            <td width="23%"><textarea class="form-control" type="text" name="text[]" style="width:100%;height:100px"><?= $row['text']; ?></textarea></td>
+                            
                             <td width="7%"><input class="form-check-input" type="radio" name="sh" value="<?= $row['id']; ?>" <?= ($row['sh'] == 1) ? 'checked' : ''; ?>></td>
                             <td width="7%"><input class="form-check-input" type="checkbox" name="del[]" value="<?= $row['id']; ?>"></td>
                             <td><input class="btn my-btn-update" type="button" onclick="op('#cover','#cvr','./modal/upload.php?table=<?= $do; ?>&id=<?= $row['id']; ?>')" value="更新圖片"></td>

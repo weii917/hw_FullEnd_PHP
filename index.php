@@ -101,7 +101,7 @@
 		<a title="<?= $title['text']; ?>" href="#">
 			<div class="title-img col" style="background:url(&#39;./img/<?= $title['img']; ?>&#39;); background-size:cover; background-position: center;"></div><!--標題-->
 			<!-- <div class="my-title-text-1">最細心的照料</div> -->
-			<div class="col-12 col-lg-2 my-title-text animate__animated animate__bounceIn">讓貓 <br> 有家的<br>感覺</div>
+			<div class="col-12 col-lg-2 my-title-text animate__animated animate__bounceIn"><pre><?= $title['text'] ?></pre></div>
 		</a>
 
 		<!-- 結束title圖片 -->
