@@ -4,7 +4,7 @@
 <form action="./api/submenu.php" method="post" enctype="multipart/form-data">
     <table  class='cent' id='sub'>
         <tr>
-            <td>次選單名稱</td>
+            <td>次名稱</td>
             <td>次選單連結網址</td>
             <td>刪除</td>
         </tr>

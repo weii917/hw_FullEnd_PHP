@@ -1,11 +1,11 @@
 <?php include_once "../api/db.php"; ?>
 <div class="container p-5 ">
-    <h3 class='text-center fs-3 fw-bold'>編輯次選單</h3>
+    <h3 class='text-center fs-3 fw-bold'>編輯次項目</h3>
     <hr>
     <form action="./api/subnews.php" method="post" enctype="multipart/form-data">
-        <table style="width: 100%;">
+        <table class='cent' id='sub'>
             <tr>
-                <td class="text-center fs-5 fw-bold">次選項名稱</td>
+                <td class="text-center fs-5 fw-bold">次項目名稱</td>
                 <td>刪除</td>
             </tr>
             <?php
@@ -27,7 +27,7 @@
             <input type="hidden" name="news_id" value="<?= $_GET['id']; ?>">
             <input class="btn my-btn-ok" type="submit" value="修改確定">
             <input class="btn my-btn-reset" type="reset" value="重置">
-            <input class="btn btn-secondary" type="button" value="更多次選單" onclick="more()">
+            <input class="btn btn-secondary" type="button" value="更多次項目" onclick="more()">
         </div>
 
     </form>

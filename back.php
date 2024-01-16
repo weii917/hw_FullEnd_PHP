@@ -401,7 +401,7 @@ if (!isset($_SESSION['login'])) {
               <!--  -->
               <div id="menuput" class="dbor">
                 <!--主選單放此-->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="my-nav-home nav-link d-flex align-items-center gap-2" aria-current="page" href="index.php">
                     <svg class="bi">
                       <use xlink:href="#gear-wide-connected" />
@@ -409,8 +409,7 @@ if (!isset($_SESSION['login'])) {
                     主選單區
                   </a>
                 </li>
-                <!-- <span class="t botli">主選單區</span> -->
-                <!-- 撈出menu_id為零=>主選單並且sh=>顯示1 -->
+         
                 <?php
                 $mainmu = $Menu->all(['sh' => 1]);
                 foreach ($mainmu as $main) {
@@ -429,25 +428,25 @@ if (!isset($_SESSION['login'])) {
                 <?php
                 }
                 ?>
-              </div>
-              <!--  -->
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <svg class="bi">
-                    <use xlink:href="#file-earmark-text" />
-                  </svg>
-                  進站總人數 :<?= $Total->find(1)['total']; ?>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="./api/logout.php">
-                  <svg class="bi">
-                    <use xlink:href="#door-closed" />
-                  </svg>
-                  Sign out
-                </a>
-              </li>
-              <!-- <li class="nav-item">
+              </div> -->
+
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <svg class="bi">
+                      <use xlink:href="#file-earmark-text" />
+                    </svg>
+                    進站總人數 :<?= $Total->find(1)['total']; ?>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="./api/logout.php">
+                    <svg class="bi">
+                      <use xlink:href="#door-closed" />
+                    </svg>
+                    Sign out
+                  </a>
+                </li>
+                <!-- <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#">
                   <svg class="bi">
                     <use xlink:href="#file-earmark-text" />
@@ -468,14 +467,7 @@ if (!isset($_SESSION['login'])) {
                   Settings
                 </a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="./api/logout.php">
-                  <svg class="bi">
-                    <use xlink:href="#door-closed" />
-                  </svg>
-                  Sign out
-                </a>
-              </li> -->
+
             </ul>
           </div>
         </div>

@@ -12,6 +12,7 @@ body {
 
 }
 
+
 img.fixed-image {
 	padding: 0px !important;
 	margin: 0px !important;
@@ -152,47 +153,9 @@ td {
 		37px 52px 80px rgba(0, 0, 0, 0.19);
 }
 
-.my-cat-prev {
-	cursor: pointer;
-	transform: rotate(-90deg);
-	font-size: 48px;
-	background-color: rgb(192, 158, 137);
-	/* border: 1px solid rgba(203, 176, 176, 0.8); */
-	border-radius: 50%;
-	color: #000000f5;
-	/* 文字顏色 */
-	padding: 10px;
-	/* 內邊距，使得文字不會貼得太緊 */
-	box-shadow:
-		4.1px 5.8px 3.6px rgba(0, 0, 0, 0.033),
-		9.1px 12.8px 10px rgba(0, 0, 0, 0.071),
-		17.3px 24.2px 24.1px rgba(0, 0, 0, 0.118),
-		37px 52px 80px rgba(0, 0, 0, 0.19);
-}
-
-.my-cat-prev:hover,
-.my-cat-next:hover {
-	background-color: rgb(255, 212, 185);
-
-}
 
 
-.my-cat-next {
-	cursor: pointer;
-	transform: rotate(90deg);
-	font-size: 48px;
-	background-color: rgb(192, 158, 137);
-	/* border: 1px solid rgba(203, 176, 176, 0.8); */
-	border-radius: 50%;
-	color: #000000f5;
-	/* 文字顏色 */
-	padding: 10px;
-	box-shadow:
-		4.1px 5.8px 3.6px rgba(0, 0, 0, 0.033),
-		9.1px 12.8px 10px rgba(0, 0, 0, 0.071),
-		17.3px 24.2px 24.1px rgba(0, 0, 0, 0.118),
-		37px 52px 80px rgba(0, 0, 0, 0.19);
-}
+
 
 .about-us-img {
 	border: 10px solid white;
@@ -217,8 +180,15 @@ td {
 	height: 40vh !important;
 }
 
+.my-modal-img {
+	width: 500px;
+	height: 500px;
+}
+
+/* news */
 .my-news-container {
 	/* background-color: #ddbea9; */
+	margin-bottom: 30vh;
 }
 
 .my-news {
