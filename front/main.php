@@ -65,10 +65,47 @@
 		</div>
 		<div class="row">
 
-			<div class=" col-12 col-md-4 mt-5 mb-5">
 
-				<div class="card">
-					<img src="./img/cat3.jpg" class="img-top" alt="...">
+			<?php
+			$rows = $Room->all(['sh' => 1]);
+			foreach ($rows as $idx => $row) {
+			?>
+				<div class=" col-12 col-md-4 mt-5 mb-5">
+					<div class="card">
+
+						<img src="./img/<?= $row['img'] ?>" class="img-top" alt="...">
+						<div class="">
+							<h5 data-bs-toggle="modal" data-bs-target="#exampleModalLg<?= $idx ?>" class="room-1-text text-start"><?= $row['room'] ?><br>
+								<button type="button" class="btn btn-outline-secondary mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModalLg<?= $idx ?>">
+									more
+								</button>
+							</h5>
+
+							<!-- <div class="col d-md-flex justify-content-md-end"> -->
+
+							<!-- </div> -->
+							<!-- lg start -->
+							<div class="modal fade" id="exampleModalLg<?= $idx ?>" tabindex="-1" aria-labelledby="exampleModalLabel-a<?= $idx ?>" aria-hidden="true">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h1 class="modal-title fs-5" id="exampleModalLabel-a<?= $idx ?>"><?= $row['room'] ?></h1>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<?= $row['text'] ?>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- <img src="./img/cat3.jpg" class="img-top" alt="...">
 					<div class="">
 						<h5 data-bs-toggle="modal" data-bs-target="#exampleModalLg-1" class="room-1-text text-start">經典房<br>
 							<button type="button" class="btn btn-outline-secondary mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModalLg-1">
@@ -76,10 +113,7 @@
 							</button>
 						</h5>
 
-						<!-- <div class="col d-md-flex justify-content-md-end"> -->
-
-						<!-- </div> -->
-						<!-- lg start -->
+					
 						<div class="modal fade" id="exampleModalLg-1" tabindex="-1" aria-labelledby="exampleModalLabel-a" aria-hidden="true">
 							<div class="modal-dialog modal-lg">
 								<div class="modal-content">
@@ -101,17 +135,21 @@
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-										<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- lg end -->
 
+					</div> -->
 					</div>
 				</div>
-			</div>
-			<div class="col-12 col-md-4 mt-5 mb-5">
+			<?php
+			}
+			?>
+
+
+			<!-- <div class="col-12 col-md-4 mt-5 mb-5">
 
 				<div class="card">
 					<img src="./img/cat4.jpg" class="img-top" alt="...">
@@ -122,10 +160,8 @@
 							</button>
 						</h5>
 
-						<!-- <div class="col d-md-flex justify-content-md-end"> -->
-
-						<!-- </div> -->
-						<!-- lg start -->
+			
+						
 						<div class="modal fade" id="exampleModalLg-2" tabindex="-1" aria-labelledby="exampleModalLabel-b" aria-hidden="true">
 							<div class="modal-dialog modal-lg">
 								<div class="modal-content">
@@ -147,12 +183,12 @@
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-										<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+										
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- lg end -->
+				
 
 					</div>
 				</div>
@@ -168,10 +204,8 @@
 							</button>
 						</h5>
 
-						<!-- <div class="col d-md-flex justify-content-md-end"> -->
-
-						<!-- </div> -->
-						<!-- lg start -->
+				
+					
 						<div class="modal fade" id="exampleModalLg-3" tabindex="-1" aria-labelledby="exampleModalLabel-c" aria-hidden="true">
 							<div class="modal-dialog modal-lg">
 								<div class="modal-content">
@@ -195,16 +229,16 @@
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-										<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+									
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- lg end -->
+					
 
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 		</div>
 	</div>

@@ -320,6 +320,14 @@ if (!isset($_SESSION['login'])) {
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=room">
+                  <svg class="bi">
+                    <use xlink:href="#puzzle" />
+                  </svg>
+                  房型管理
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="?do=image">
                   <svg class="bi">
                     <use xlink:href="#graph-up" />

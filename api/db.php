@@ -156,6 +156,7 @@ $Admin = new DB('admin');
 $Menu = new DB('menu');
 $Book = new DB('book');
 $Address = new DB('address');
+$Room = new DB('room');
 //$tables=array_keys(get_defined_vars());
 /* dd($tables); */
 // 如果網址存在do變數，用此變數轉換為首字大寫ucfirst
