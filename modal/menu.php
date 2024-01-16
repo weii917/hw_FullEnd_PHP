@@ -2,7 +2,7 @@
     <h3 class=' fs-3 fw-bold'>新增主選單</h3>
     <hr>
     <form action="./api/add.php" method="post" enctype="multipart/form-data">
-        <table>
+        <table style="width: 100%;">
 
             <tr>
                 <td>主選單名稱:</td>

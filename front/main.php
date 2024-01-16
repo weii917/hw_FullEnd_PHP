@@ -6,7 +6,7 @@
 				<div class="about-us d-flex justify-content-center flex-column">
 					<h1 class="mb-5">關於我們</h1>
 					<p>
-						<pre class="my-line-height"><?= $us = $Mvim->find(['sh' => 1])['text']; ?></pre>
+					<pre class="my-line-height"><?= $us = $Mvim->find(['sh' => 1])['text']; ?></pre>
 					</p>
 				</div>
 			</div>
@@ -75,13 +75,10 @@
 						<div class="">
 							<h5 data-bs-toggle="modal" data-bs-target="#exampleModalLg<?= $idx ?>" class="room-1-text text-start"><?= $row['room'] ?><br>
 								<button type="button" class="btn btn-outline-secondary mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModalLg<?= $idx ?>">
-									more
+									more...
 								</button>
 							</h5>
 
-							<!-- <div class="col d-md-flex justify-content-md-end"> -->
-
-							<!-- </div> -->
 							<!-- lg start -->
 							<div class="modal fade" id="exampleModalLg<?= $idx ?>" tabindex="-1" aria-labelledby="exampleModalLabel<?= $idx ?>" aria-hidden="true">
 								<div class="modal-dialog modal-lg">

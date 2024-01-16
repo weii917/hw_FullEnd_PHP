@@ -1,15 +1,12 @@
-<!-- 8.做title 使用modal新增圖片 -->
-<!-- 11.完成後台標題管理資料列表功能及更新圖片按鈕設定 -->
-<!-- 13. 做更新圖片功能到modal/upload.php再到api/update.php更新-->
 <div class="container-fluid">
-    <?php
-    $rows = $DB->all(['sh' => 1]);
-    foreach ($rows as $row) {
+    <!-- <?php
+            $rows = $DB->all(['sh' => 1]);
+            foreach ($rows as $row) {
 
-    ?>
+            ?>
         <div class="row"><img src="./img/<?= $row['img']; ?>" class="mx-auto" style="width:80%;height:550px" alt=""></div>
     <?php
-    } ?>
+            } ?> -->
     <div class="row mt-3  mb-5 my-box-shadow">
         <p class="text-center fs-3 fw-bold">網站標題管理</p>
         <form method="post" action="./api/edit.php">
@@ -32,9 +29,9 @@
 
                     ?>
                         <tr class="p-2">
-                            <td width="45%"><img src="./img/<?= $row['img']; ?>" class="m-2" style="width:150px;height:100px"></td>
+                            <td width="45%"><img src="./img/<?= $row['img']; ?>" class="m-2" style="width:300px;height:200px"></td>
                             <td width="23%"><textarea class="form-control" type="text" name="text[]" style="width:100%;height:100px"><?= $row['text']; ?></textarea></td>
-                            
+
                             <td width="7%"><input class="form-check-input" type="radio" name="sh" value="<?= $row['id']; ?>" <?= ($row['sh'] == 1) ? 'checked' : ''; ?>></td>
                             <td width="7%"><input class="form-check-input" type="checkbox" name="del[]" value="<?= $row['id']; ?>"></td>
                             <td><input class="btn my-btn-update" type="button" onclick="op('#cover','#cvr','./modal/upload.php?table=<?= $do; ?>&id=<?= $row['id']; ?>')" value="更新圖片"></td>

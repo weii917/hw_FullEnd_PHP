@@ -316,7 +316,7 @@ if (!isset($_SESSION['login'])) {
                   <svg class="bi">
                     <use xlink:href="#puzzle" />
                   </svg>
-                  關於我們圖片管理
+                  關於我們管理
                 </a>
               </li>
               <li class="nav-item">
@@ -324,7 +324,23 @@ if (!isset($_SESSION['login'])) {
                   <svg class="bi">
                     <use xlink:href="#puzzle" />
                   </svg>
-                  房型管理
+                  房型介紹管理
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=address">
+                  <svg class="bi">
+                    <use xlink:href="#puzzle" />
+                  </svg>
+                  聯絡我們管理
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=news">
+                  <svg class="bi">
+                    <use xlink:href="#puzzle" />
+                  </svg>
+                  住宿須知管理
                 </a>
               </li>
               <li class="nav-item">
@@ -336,38 +352,6 @@ if (!isset($_SESSION['login'])) {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="?do=total">
-                  <svg class="bi">
-                    <use xlink:href="#puzzle" />
-                  </svg>
-                  進站總人數管理
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="?do=bottom">
-                  <svg class="bi">
-                    <use xlink:href="#puzzle" />
-                  </svg>
-                  頁尾版權資料管理
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="?do=news">
-                  <svg class="bi">
-                    <use xlink:href="#puzzle" />
-                  </svg>
-                  住宿須知資料管理
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="?do=admin">
-                  <svg class="bi">
-                    <use xlink:href="#people" />
-                  </svg>
-                  管理者帳號管理
-                </a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="?do=menu">
                   <svg class="bi">
                     <use xlink:href="#puzzle" />
@@ -376,11 +360,29 @@ if (!isset($_SESSION['login'])) {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-2" href="?do=address">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=bottom">
                   <svg class="bi">
                     <use xlink:href="#puzzle" />
                   </svg>
-                  聯絡我們管理
+                  頁尾版權管理
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=admin">
+                  <svg class="bi">
+                    <use xlink:href="#people" />
+                  </svg>
+                  管理者帳號管理
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="?do=total">
+                  <svg class="bi">
+                    <use xlink:href="#puzzle" />
+                  </svg>
+                  進站總人數管理
                 </a>
               </li>
             </ul>
@@ -479,7 +481,7 @@ if (!isset($_SESSION['login'])) {
         </div>
       </div>
 
-      <main style="width: 70%;" class="mx-auto col-12 col-md-9  col-lg-10 ">
+      <main style="width: 80%;" class="mx-auto col-12 col-md-9  col-lg-10 ">
         <div class="container" style="height: 80%;">
           <?php
 

@@ -1,5 +1,5 @@
 <div class="col" style="height: 80%;">
-    <div class="row mt-5 my-box-shadow">
+    <div class="row mt-5 mb-5 my-box-shadow">
         <p class="text-center fs-3 fw-bold">聯絡我們管理</p>
         <form method="post" action="./api/edit_info.php">
             <table style="width:100%;margin:auto">

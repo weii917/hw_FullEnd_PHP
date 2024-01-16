@@ -3,7 +3,7 @@
     <h3 class='fs-3 fw-bold'>新增訂房</h3>
     <hr>
     <form action="./api/add.php" method="post" enctype="multipart/form-data">
-        <table>
+        <table style="width: 100%;">
 
             <tr>
                 <td>電子郵件</td>
@@ -47,11 +47,18 @@
 
             <tr>
                 <td>如何得知</td>
-                <td><input class="form-control" type="text" name="know" id=""></td>
+                <td colspan="3"> <select name="know" id="formGroupExampleInput9" class="form-control" style="border: none; border-bottom: 1px solid lightgray;">
+                        <option value="是我們的老顧客">是我們的老顧客</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Google搜尋">Google搜尋</option>
+                        <option value="朋友介紹">朋友介紹</option>
+                    </select></td>
             </tr>
             <tr>
                 <td>其他補充</td>
-                <td><input class="form-control" type="text" name="other" id=""></td>
+                <td colspan="3"><textarea class="form-control" type="text" name="other" style="width:100%;height:100px"></textarea></td>
+                <!-- <td><input class="form-control" type="text" name="other" id=""></td> -->
             </tr>
         </table>
         <div class="mt-5 text-center">

@@ -3,7 +3,7 @@
     <h3 class='text-center fs-3 fw-bold'>編輯次選單</h3>
     <hr>
     <form action="./api/subnews.php" method="post" enctype="multipart/form-data">
-        <table class='cent' id='sub'>
+        <table style="width: 100%;">
             <tr>
                 <td class="text-center fs-5 fw-bold">次選項名稱</td>
                 <td>刪除</td>

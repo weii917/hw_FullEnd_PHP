@@ -6,10 +6,13 @@
             echo "<h3 class='text-center fs-3 fw-bold'>更新網站標題圖片</h3>";
             break;
         case "mvim";
-            echo "<h3 class='text-center fs-3 fw-bold'>更新動畫圖片</h3>";
+            echo "<h3 class='text-center fs-3 fw-bold'>更新圖片</h3>";
             break;
         case "image";
             echo "<h3 class='text-center fs-3 fw-bold'>更新輪播圖片</h3>";
+            break;
+        case "room";
+            echo "<h3 class='text-center fs-3 fw-bold'>更新房型圖片</h3>";
             break;
     }
 
@@ -18,7 +21,7 @@
 
     <hr>
     <form action="./api/update.php" method="post" enctype="multipart/form-data">
-        <table>
+        <table style="width: 100%;">
             <tr>
                 <?php
                 switch ($_GET['table']) {
@@ -26,10 +29,13 @@
                         echo "<td>標題區圖片</td>";
                         break;
                     case "mvim";
-                        echo "<td>動畫圖片</td>";
+                        echo "<td>圖片</td>";
                         break;
                     case "image";
-                        echo "<td>校園映像圖片</td>";
+                        echo "<td>輪播圖片</td>";
+                        break;
+                    case "room";
+                        echo "<td>房型圖片</td>";
                         break;
                 }
 

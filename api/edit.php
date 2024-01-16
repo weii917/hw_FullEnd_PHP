@@ -56,6 +56,7 @@ foreach ($_POST['id'] as $key => $id) {
                 break;
             case "room":
                 $row['room'] = $_POST['room'][$key];
+                $row['sh'] = (isset($_POST['sh']) && in_array($id, $_POST['sh'])) ? 1 : 0;
                 break;
             default:
                 $row['sh'] = (isset($_POST['sh']) && in_array($id, $_POST['sh'])) ? 1 : 0;

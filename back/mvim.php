@@ -1,6 +1,6 @@
 <div class="col" style="height: 80%;">
     <div class="row mt-5 mb-5 my-box-shadow">
-        <p class="text-center fs-3 fw-bold">關於我們圖片管理</p>
+        <p class="text-center fs-3 fw-bold">關於我們管理</p>
         <form method="post" action="./api/edit.php">
             <table width="100%" style="text-align: center;">
                 <tbody>
@@ -36,7 +36,7 @@
                 <tbody>
                     <tr>
                         <input type="hidden" name="table" value="<?= $do; ?>">
-                        <td width="42%"><input class="btn btn-dark" type="button" onclick="op('#cover','#cvr','./modal/<?= $do; ?>.php?table=<?= $do; ?>')" value="新增圖片"></td>
+                        <td width="42%"><input class="btn btn-dark" type="button" onclick="op('#cover','#cvr','./modal/<?= $do; ?>.php?table=<?= $do; ?>')" value="新增關於我們"></td>
                         <td class="">
                             <input class="btn my-btn-ok" type="submit" value="修改確定">
                             <input class="btn my-btn-reset" type="reset" value="重置">

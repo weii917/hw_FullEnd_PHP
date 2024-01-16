@@ -3,14 +3,14 @@
     <h3 class='fs-3 fw-bold'>新增網站標題圖片</h3>
     <hr>
     <form action="./api/add.php" method="post" enctype="multipart/form-data">
-        <table>
+        <table style="width: 100%;">
             <tr>
                 <td>標題區圖片</td>
                 <td><input class="form-control" type="file" name="img" id=""></td>
             </tr>
             <tr>
                 <td>標題區替代文字&nbsp;&nbsp;</td>
-                <td><textarea class="form-control" type="text" name="text" style="width:100%;height:150px"></textarea></td>
+                <td><textarea class="form-control" type="text" name="text" style="width:100%;height:200px"></textarea></td>
                 <!-- <td><input class="form-control" type="text" name="text" id=""></td> -->
             </tr>
         </table>

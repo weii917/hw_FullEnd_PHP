@@ -24,11 +24,11 @@
 
                     ?>
                         <tr class="p-2">
-                            <td><img src="./img/<?= $row['img']; ?>" class="m-2" style="width:300px;height:200px" ></td>
+                            <td><img src="./img/<?= $row['img']; ?>" class="m-2" style="width:300px;height:200px"></td>
                             <td><input class="form-control text-center" type="text" name="room[]" value="<?= $row['room']; ?>" style="width:70%"></td>
                             <td><textarea class="form-control" type="text" name="text[]" style="width:100%;height:300px"><?= $row['text']; ?></textarea></td>
                             <!-- <td width="23%"><input class="form-control" type="text" name="text[]" value="<?= $row['text']; ?>" style="width:90%"></td> -->
-                            <td><input class="form-check-input" type="radio" name="sh[]" value="<?= $row['id']; ?>" <?= ($row['sh'] == 1) ? 'checked' : ''; ?>></td>
+                            <td><input class="form-check-input" type="checkbox" name="sh[]" value="<?= $row['id']; ?>" <?= ($row['sh'] == 1) ? 'checked' : ''; ?>></td>
                             <td><input class="form-check-input" type="checkbox" name="del[]" value="<?= $row['id']; ?>"></td>
                             <td><input class="btn my-btn-update" type="button" onclick="op('#cover','#cvr','./modal/upload.php?table=<?= $do; ?>&id=<?= $row['id']; ?>')" value="更新圖片"></td>
                             <input type="hidden" name="id[]" value="<?= $row['id']; ?>">
@@ -42,7 +42,7 @@
                 <tbody>
                     <tr>
                         <input type="hidden" name="table" value="<?= $do; ?>">
-                        <td width="200px"><input class="btn btn-dark" type="button" onclick="op('#cover','#cvr','./modal/<?= $do; ?>.php?table=<?= $do; ?>')" value="新增網站標題圖片"></td>
+                        <td width="200px"><input class="btn btn-dark" type="button" onclick="op('#cover','#cvr','./modal/<?= $do; ?>.php?table=<?= $do; ?>')" value="新增房型圖片"></td>
                         <td class="cent">
                             <input class="btn my-btn-ok" type="submit" value="修改確定">
                             <input class="btn my-btn-reset" type="reset" value="重置">

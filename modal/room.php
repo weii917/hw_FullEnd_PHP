@@ -3,7 +3,8 @@
     <h3 class='fs-3 fw-bold'>新增房型圖片</h3>
     <hr>
     <form action="./api/add.php" method="post" enctype="multipart/form-data">
-        <table>
+        <table style="width: 100%;">
+
             <tr>
                 <td>房型圖片</td>
                 <td><input class="form-control" type="file" name="img" id=""></td>
@@ -14,7 +15,7 @@
             </tr>
             <tr>
                 <td>描述&nbsp;&nbsp;</td>
-                <td><textarea class="form-control" type="text" name="text" style="width:100%;height:300px"></textarea></td>
+                <td><textarea class="form-control" type="text" name="text" style="width:100%;height:200px"></textarea></td>
                 <!-- <td><input class="form-control" type="text" name="text" id=""></td> -->
             </tr>
         </table>
@@ -29,4 +30,3 @@
 
     <hr style="margin-top:12%">
 </div>
-
