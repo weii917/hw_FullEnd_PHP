@@ -117,7 +117,7 @@
 											<div class="row">
 												<div class="col-6 p-5 d-flex flex-column justify-content-center align-items-start">
 													<pre class="" style="font-size: 16px;"><?= $row['text'] ?></pre>
-													<a href="../book.php" class="btn btn-outline-warning">預約去 &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+													<a href="./book.php" class="btn btn-outline-warning">預約去 &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
 
 												</div>
 												<img class="col-6" src="./img/<?= $row['img'] ?>" class="img-top" alt="...">
