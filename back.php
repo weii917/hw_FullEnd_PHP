@@ -138,7 +138,7 @@ if (!isset($_SESSION['login'])) {
       <a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;" onclick="cl('#cover')" class="btn btn-light">X</a>
       <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
 
-      <a style="position:absolute; right:5px; bottom:5px; cursor:pointer; z-index:9999;" onclick="cl('#cover')"><button class="btn btn-danger">close</button></a>
+      <!-- <a style="position:absolute; right:5px; bottom:2%; cursor:pointer; z-index:9999;" onclick="cl('#cover')"><button class="btn btn-danger">close</button></a> -->
     </div>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">

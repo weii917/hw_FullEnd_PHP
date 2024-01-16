@@ -10,7 +10,8 @@
             </tr>
             <tr>
                 <td>標題區替代文字&nbsp;&nbsp;</td>
-                <td><input class="form-control" type="text" name="text" id=""></td>
+                <td><textarea class="form-control" type="text" name="text" style="width:100%;height:150px"></textarea></td>
+                <!-- <td><input class="form-control" type="text" name="text" id=""></td> -->
             </tr>
         </table>
         <div class="mt-5 text-center">
