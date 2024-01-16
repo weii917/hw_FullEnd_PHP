@@ -5,8 +5,31 @@
 			<div class="col-12 col-sm-7 d-flex mt-5 mx-auto">
 				<div class="about-us d-flex justify-content-center flex-column">
 					<h1 class="mb-5">關於我們</h1>
+					<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+						<div class="carousel-inner">
+							<?php
+							$rows = $Mvim->all(['sh' => 1]);
+
+							foreach ($rows as $idx => $row) {
+								$activeClass = ($idx === 0) ? 'active' : '';
+							?>
+
+								<div class="carousel-item <?= $activeClass; ?>">
+									<pre class="my-line-height"><?= $row['text']; ?></pre>
+								</div>
+							<?php
+							}
+							?>
+							<!-- <div class="carousel-item">
+								<img src="..." class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="..." class="d-block w-100" alt="...">
+							</div> -->
+						</div>
+					</div>
 					<p>
-					<pre class="my-line-height"><?= $us = $Mvim->find(['sh' => 1])['text']; ?></pre>
+
 					</p>
 				</div>
 			</div>
