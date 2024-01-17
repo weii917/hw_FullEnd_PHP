@@ -5,32 +5,9 @@
 			<div class="col-12 col-sm-7 d-flex mt-5 mx-auto">
 				<div class="about-us d-flex justify-content-center flex-column">
 					<h1 class="mb-5">關於我們</h1>
-					<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
-						<div class="carousel-inner">
-							<?php
-							$rows = $Mvim->all(['sh' => 1]);
+					<div id="mwwwtext" loop="true" class="my-line-height">
 
-							foreach ($rows as $idx => $row) {
-								$activeClass = ($idx === 0) ? 'active' : '';
-							?>
-
-								<div class="carousel-item <?= $activeClass; ?>">
-									<pre class="my-line-height"><?= $row['text']; ?></pre>
-								</div>
-							<?php
-							}
-							?>
-							<!-- <div class="carousel-item">
-								<img src="..." class="d-block w-100" alt="...">
-							</div>
-							<div class="carousel-item">
-								<img src="..." class="d-block w-100" alt="...">
-							</div> -->
-						</div>
 					</div>
-					<p>
-
-					</p>
 				</div>
 			</div>
 			<!--輪播圖片start-->
@@ -50,10 +27,12 @@
 	<script>
 		// 宣告一個陣列，把資料庫撈出來的img檔名，存進lin裡面，顯示圖片時依據索引顯示
 		var lin = new Array();
+		var linText = new Array();
 		<?php
 		$lins = $Mvim->all(['sh' => 1]);
 		foreach ($lins as $lin) {
 			echo "lin.push('{$lin['img']}');";
+			echo "linText.push(`{$lin['text']}`);";
 		}
 		?>
 
@@ -69,6 +48,8 @@
 		function ww() {
 			$("#mwww").html("<embed  class='about-us-img' loop=true src='./img/" + lin[now] + "' style='width:99%; height:100%;'></embed>")
 			//$("#mwww").attr("src",lin[now])
+			$("#mwwwtext").html("<pre loop=true>" + linText[now] + "</pre>")
+
 			now++;
 			if (now >= lin.length)
 				now = 0;

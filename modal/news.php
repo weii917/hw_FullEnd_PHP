@@ -11,6 +11,7 @@
         </table>
         <div class="mt-5 text-center">
             <input type="hidden" name="table" value="<?= $_GET['table']; ?>">
+            <input type="hidden" name="news_id" value="0">
             <input class="btn my-btn-ok" type="submit" value="更新">
             <input class="btn my-btn-reset" type="reset" value="重置">
         </div>

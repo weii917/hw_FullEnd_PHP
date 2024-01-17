@@ -60,11 +60,11 @@
 
 
 				</ul>
-				<form class="d-flex" role="search">
+				<!-- <form class="d-flex" role="search">
 
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<!-- <button class="btn btn-outline-light" type="submit">Logout</button> -->
-				</form>
+					<button class="btn btn-outline-light" type="submit">Logout</button>
+				</form> -->
 
 
 				<?php
@@ -101,7 +101,9 @@
 		<a title="<?= $title['text']; ?>" href="#">
 			<div class="title-img col" style="background:url(&#39;./img/<?= $title['img']; ?>&#39;); background-size:cover; background-position: center;"></div><!--標題-->
 			<!-- <div class="my-title-text-1">最細心的照料</div> -->
-			<div class="col-12 col-lg-2 my-title-text animate__animated animate__bounceIn"><pre><?= $title['text'] ?></pre></div>
+			<div class="col-12 col-lg-2 my-title-text animate__animated animate__bounceIn">
+				<pre><?= $title['text'] ?></pre>
+			</div>
 		</a>
 
 		<!-- 結束title圖片 -->

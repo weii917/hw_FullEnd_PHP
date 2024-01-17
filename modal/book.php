@@ -55,11 +55,11 @@
                         <option value="朋友介紹">朋友介紹</option>
                     </select></td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td>其他補充</td>
                 <td colspan="3"><textarea class="form-control" type="text" name="other" style="width:100%;height:100px"></textarea></td>
-                <!-- <td><input class="form-control" type="text" name="other" id=""></td> -->
-            </tr>
+                <td><input class="form-control" type="text" name="other" id=""></td>
+            </tr> -->
         </table>
         <div class="mt-5 text-center">
             <!-- back/title.php附加網址帶進來的table，要隱藏送到api/add.php -->
